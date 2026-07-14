@@ -5,11 +5,11 @@ import { Ionicons } from '@expo/vector-icons';
 import * as Location from 'expo-location';
 
 LogBox.ignoreLogs(['Background location is limited in Expo Go']);
-import axios from 'axios';
+import apiClient from '../../app/api/client'; // central client with correct URL + auth interceptor
 import { useAuthStore } from '../../store/authStore';
 import { requestLocationPermissions, stopLocationTracking, registerForPushNotificationsAsync } from '../../services/locationTracking';
 import { useRouter } from 'expo-router';
-
+import Header from '../../components/Header';
 const HAZARD_CATEGORIES = [
   { id: "Waterlogging", icon: "water" },
   { id: "Bad Roads", icon: "hammer" },
@@ -48,7 +48,6 @@ export default function LocationsScreen() {
     comment: ''
   });
 
-  const token = useAuthStore((state) => state.token);
   const router = useRouter();
 
   useEffect(() => {
@@ -59,9 +58,7 @@ export default function LocationsScreen() {
 
   const fetchHazards = async () => {
     try {
-      const response = await axios.get('http://10.0.2.2:8000/hazards', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await apiClient.get('/hazards');
       setHazards(response.data.data || []);
     } catch (e) {
       console.error(e);
@@ -70,9 +67,7 @@ export default function LocationsScreen() {
 
   const fetchGates = async () => {
     try {
-      const response = await axios.get('http://10.0.2.2:8000/gates', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await apiClient.get('/gates');
       setGates(response.data.data || []);
     } catch (e) {
       console.error(e);
@@ -81,9 +76,7 @@ export default function LocationsScreen() {
 
   const fetchGateReviews = async (gateId: string) => {
     try {
-      const response = await axios.get(`http://10.0.2.2:8000/gates/${gateId}/reviews`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await apiClient.get(`/gates/${gateId}/reviews`);
       setGateReviews(response.data.data || []);
     } catch (e) {
       console.error(e);
@@ -131,14 +124,12 @@ export default function LocationsScreen() {
         }
       }
 
-      await axios.post('http://10.0.2.2:8000/hazards', {
+      await apiClient.post('/hazards', {
         title: newHazardTitle,
         description: newHazardDesc,
         latitude: location.coords.latitude,
         longitude: location.coords.longitude,
-        severity: 'medium'
-      }, {
-        headers: { Authorization: `Bearer ${token}` }
+        severity: 'medium',
       });
       setShowHazardModal(false);
       setNewHazardTitle('');
@@ -169,12 +160,10 @@ export default function LocationsScreen() {
         }
       }
 
-      await axios.post('http://10.0.2.2:8000/gates', {
+      await apiClient.post('/gates', {
         society_name: newGateName,
         latitude: location.coords.latitude,
         longitude: location.coords.longitude,
-      }, {
-        headers: { Authorization: `Bearer ${token}` }
       });
       setShowGateModal(false);
       setNewGateName('');
@@ -188,15 +177,13 @@ export default function LocationsScreen() {
   const handleSubmitReview = async () => {
     if (!selectedGate) return;
     try {
-      await axios.post(`http://10.0.2.2:8000/gates/${selectedGate.id}/reviews`, {
+      await apiClient.post(`/gates/${selectedGate.id}/reviews`, {
         waiting_time: parseInt(newReview.waiting_time) || 0,
         lift_available: newReview.lift_available,
         parking: newReview.parking,
         delivery_difficulty: newReview.delivery_difficulty,
         guard_behavior: newReview.guard_behavior,
-        comment: newReview.comment
-      }, {
-        headers: { Authorization: `Bearer ${token}` }
+        comment: newReview.comment,
       });
       setShowReviewModal(false);
       setNewReview({ waiting_time: '', lift_available: false, parking: false, delivery_difficulty: 3, guard_behavior: 3, comment: '' });
@@ -213,17 +200,8 @@ export default function LocationsScreen() {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-          <Ionicons name="arrow-back" size={24} color="#000" />
-        </TouchableOpacity>
-        <Text style={styles.title}>Location Intelligence</Text>
-        <TouchableOpacity onPress={() => activeTab === 'hazards' ? setShowHazardModal(true) : setShowGateModal(true)}>
-          <Ionicons name="add-circle" size={28} color="#007AFF" />
-        </TouchableOpacity>
-      </View>
-
+    <View style={styles.container}>
+      <Header title="Location Intelligence" />
       <View style={styles.trackingContainer}>
         <Text style={styles.trackingText}>Background Tracking & Alerts</Text>
         <Switch value={isTracking} onValueChange={toggleTracking} />
@@ -270,6 +248,14 @@ export default function LocationsScreen() {
           ListEmptyComponent={<Text style={styles.emptyText}>No society gates added yet.</Text>}
         />
       )}
+
+      {/* FAB */}
+      <TouchableOpacity 
+        style={styles.fab} 
+        onPress={() => activeTab === 'hazards' ? setShowHazardModal(true) : setShowGateModal(true)}
+      >
+        <Ionicons name="add" size={30} color="#fff" />
+      </TouchableOpacity>
 
       {/* Hazard Creation Modal */}
       <Modal visible={showHazardModal} animationType="slide" transparent={true}>
@@ -406,7 +392,7 @@ export default function LocationsScreen() {
         </View>
       </Modal>
 
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -453,5 +439,20 @@ const styles = StyleSheet.create({
   reviewComment: { marginTop: 8, fontStyle: 'italic', color: '#666' },
   addReviewBtn: { backgroundColor: '#007AFF', margin: 16, padding: 16, borderRadius: 8, alignItems: 'center' },
   addReviewBtnText: { color: '#fff', fontSize: 16, fontWeight: 'bold' },
-  switchRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, backgroundColor: '#f2f2f7', padding: 12, borderRadius: 8 }
+  switchRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, backgroundColor: '#f2f2f7', padding: 12, borderRadius: 8 },
+  fab: {
+    position: 'absolute',
+    bottom: 24,
+    right: 20,
+    width: 58,
+    height: 58,
+    borderRadius: 29,
+    backgroundColor: '#007AFF',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.35,
+    shadowRadius: 12,
+    elevation: 8,
+  }
 });

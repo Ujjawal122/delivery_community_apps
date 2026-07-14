@@ -18,7 +18,10 @@ from app.schemas.user import (
     UpdateProfileRequest,
     UserResponse,
 )
+from app.schemas.follow import UserSearchResponse, FollowActionResponse, UserSearchItem
 from app.services.user_service import UserService
+from app.services.follow_service import FollowService
+import uuid
 
 router = APIRouter(prefix="/users", tags=["Users"])
 
@@ -114,3 +117,83 @@ async def delete_account(
     await UserService.delete_account(db, redis, current_user, data.password, jti)
     await db.commit()
     return no_data("Account deleted successfully")
+
+
+# ── Follow & Search Endpoints ─────────────────────────────────────
+
+@router.get("/search", response_model=ApiResponse, summary="Search users")
+async def search_users(
+    q: str,
+    limit: int = 20,
+    offset: int = 0,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Search for users by email, username, or full name."""
+    items, total = await FollowService.search_users(db, q, limit, offset, current_user.id)
+    response_data = UserSearchResponse(items=items, total=total, limit=limit, offset=offset)
+    return ok(response_data.model_dump(), "Users retrieved")
+
+
+@router.get("/suggestions", response_model=ApiResponse, summary="Get user suggestions")
+async def get_suggestions(
+    limit: int = 20,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Get user suggestions to follow."""
+    items = await FollowService.get_suggestions(db, current_user.id, limit)
+    # Reusing search response structure for simplicity
+    response_data = UserSearchResponse(items=items, total=len(items), limit=limit, offset=0)
+    return ok(response_data.model_dump(), "Suggestions retrieved")
+
+
+@router.get("/{user_id}/followers", response_model=ApiResponse, summary="Get followers")
+async def get_followers(
+    user_id: uuid.UUID,
+    limit: int = 20,
+    offset: int = 0,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Get followers of a specific user."""
+    items, total = await FollowService.get_followers(db, user_id, limit, offset, current_user.id)
+    response_data = UserSearchResponse(items=items, total=total, limit=limit, offset=offset)
+    return ok(response_data.model_dump(), "Followers retrieved")
+
+
+@router.get("/{user_id}/following", response_model=ApiResponse, summary="Get following")
+async def get_following(
+    user_id: uuid.UUID,
+    limit: int = 20,
+    offset: int = 0,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Get users that a specific user is following."""
+    items, total = await FollowService.get_following(db, user_id, limit, offset, current_user.id)
+    response_data = UserSearchResponse(items=items, total=total, limit=limit, offset=offset)
+    return ok(response_data.model_dump(), "Following retrieved")
+
+
+@router.post("/{user_id}/follow", response_model=ApiResponse, summary="Follow a user")
+async def follow_user(
+    user_id: uuid.UUID,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Follow another user."""
+    result = await FollowService.follow_user(db, current_user, user_id)
+    return ok(result, result["message"])
+
+
+@router.delete("/{user_id}/follow", response_model=ApiResponse, summary="Unfollow a user")
+async def unfollow_user(
+    user_id: uuid.UUID,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Unfollow a user."""
+    result = await FollowService.unfollow_user(db, current_user, user_id)
+    return ok(result, result["message"])
+

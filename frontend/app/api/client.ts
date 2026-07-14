@@ -1,7 +1,11 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const BASE_URL = 'http://10.0.2.2:8000'; 
+// ── URL Configuration ─────────────────────────────────────────────────────────
+// For Android Emulator:  use 'http://10.0.2.2:8000'
+// For Physical Device:   use your PC's local Wi-Fi IP (must be same network)
+const BASE_URL = 'http://10.0.2.2:8000';
+
 
 const apiClient = axios.create({
   baseURL: BASE_URL,
@@ -156,6 +160,69 @@ export const checkCommunityMembership = async (communityId: string) => {
 
 export const getCommunityPosts = async (communityId: string, page: number = 1, limit: number = 20) => {
   const response = await apiClient.get('/posts', { params: { community_id: communityId, page, limit } });
+  return response.data;
+};
+
+// Follow & Search
+export const searchUsers = async (query: string, limit: number = 20, offset: number = 0) => {
+  const response = await apiClient.get('/users/search', { params: { q: query, limit, offset } });
+  return response.data;
+};
+
+export const getSuggestions = async (limit: number = 20) => {
+  const response = await apiClient.get('/users/suggestions', { params: { limit } });
+  return response.data;
+};
+
+export const followUser = async (userId: string) => {
+  const response = await apiClient.post(`/users/${userId}/follow`);
+  return response.data;
+};
+
+export const unfollowUser = async (userId: string) => {
+  const response = await apiClient.delete(`/users/${userId}/follow`);
+  return response.data;
+};
+
+export const getFollowers = async (userId: string, limit: number = 20, offset: number = 0) => {
+  const response = await apiClient.get(`/users/${userId}/followers`, { params: { limit, offset } });
+  return response.data;
+};
+
+export const getFollowing = async (userId: string, limit: number = 20, offset: number = 0) => {
+  const response = await apiClient.get(`/users/${userId}/following`, { params: { limit, offset } });
+  return response.data;
+};
+
+// Notifications
+export const getNotifications = async (page: number = 1, limit: number = 20) => {
+  const response = await apiClient.get('/notifications', { params: { page, limit } });
+  return response.data;
+};
+
+export const getUnreadNotificationCount = async () => {
+  const response = await apiClient.get('/notifications/unread-count');
+  return response.data;
+};
+
+export const markNotificationRead = async (notificationId: string) => {
+  const response = await apiClient.patch(`/notifications/${notificationId}/read`);
+  return response.data;
+};
+
+export const markAllNotificationsRead = async () => {
+  const response = await apiClient.post('/notifications/mark-all-read');
+  return response.data;
+};
+
+// Community Join Requests
+export const approveJoinRequest = async (communityId: string, userId: string) => {
+  const response = await apiClient.post(`/communities/${communityId}/join-requests/${userId}/approve`);
+  return response.data;
+};
+
+export const rejectJoinRequest = async (communityId: string, userId: string) => {
+  const response = await apiClient.post(`/communities/${communityId}/join-requests/${userId}/reject`);
   return response.data;
 };
 

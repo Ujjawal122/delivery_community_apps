@@ -1,7 +1,7 @@
 import uuid
 from datetime import datetime, timezone
 
-from sqlalchemy import Column, String, Text, Integer, Boolean, ForeignKey, DateTime
+from sqlalchemy import Column, String, Text, Integer, Boolean, ForeignKey, DateTime, Float
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from geoalchemy2 import Geography
@@ -23,6 +23,8 @@ class Gate(Base, TimestampMixin):
         Geography(geometry_type="POINT", srid=4326),
         nullable=True,
     )
+    latitude = Column(Float, nullable=True)
+    longitude = Column(Float, nullable=True)
 
     reviews = relationship("GateReview", back_populates="gate", cascade="all, delete-orphan")
 

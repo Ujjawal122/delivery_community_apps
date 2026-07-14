@@ -225,21 +225,56 @@ class UserService:
 # ── Private helper ─────────────────────────────────────────────────
 
 def _user_to_dict(user: User) -> dict:
-    """Convert a User ORM object to a plain dict safe for Redis HASH storage."""
+    """Convert a User ORM object to a plain dict safe for Redis HASH storage.
+
+    Handles special types:
+      - uuid.UUID  → str
+      - datetime   → ISO string
+      - bool       → str ("True"/"False")
+      - PostGIS WKBElement (location) → extract lat/lon as separate fields
+      - list/array → json-serialised string
+      - anything else non-primitive → skipped with a warning
+    """
     from datetime import datetime
     import uuid
+
+    # WKBElement is the raw binary type returned by GeoAlchemy2 columns
+    try:
+        from geoalchemy2.elements import WKBElement
+        _wkb_type = WKBElement
+    except ImportError:
+        _wkb_type = None
 
     result = {}
     for col in user.__table__.columns:
         val = getattr(user, col.name)
         if val is None:
             continue
+
+        # PostGIS geometry column → convert to lat/lon strings, skip raw bytes
+        if _wkb_type and isinstance(val, _wkb_type):
+            # Use the model's @property to extract coords safely
+            lat = getattr(user, 'latitude', None)
+            lon = getattr(user, 'longitude', None)
+            if lat is not None:
+                result['latitude'] = str(lat)
+            if lon is not None:
+                result['longitude'] = str(lon)
+            continue  # skip the raw WKBElement itself
+
         if isinstance(val, uuid.UUID):
             result[col.name] = str(val)
         elif isinstance(val, datetime):
             result[col.name] = val.isoformat()
         elif isinstance(val, bool):
             result[col.name] = str(val)
-        else:
+        elif isinstance(val, list):
+            import json as _json
+            result[col.name] = _json.dumps(val)
+        elif isinstance(val, (str, int, float)):
             result[col.name] = val
+        else:
+            # Skip any other non-serialisable type to prevent crashes
+            logger.warning(f"_user_to_dict: skipping non-serialisable field '{col.name}' type={type(val).__name__}")
+
     return result

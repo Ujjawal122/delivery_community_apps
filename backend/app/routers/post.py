@@ -6,7 +6,7 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.responses import ApiResponse, created, no_data, ok
-from app.dependencies import get_current_user, get_db
+from app.dependencies import get_current_user, get_db, get_current_user_optional
 from app.models.post import PostType
 from app.models.user import User
 from app.schemas.post import (
@@ -209,9 +209,10 @@ async def list_comments(
     page: int = Query(1, ge=1),
     limit: int = Query(50, ge=1, le=200),
     db: AsyncSession = Depends(get_db),
+    current_user: Optional[User] = Depends(get_current_user_optional),
 ):
    
-    result = await CommentService.list_comments(db, post_id, page, limit)
+    result = await CommentService.list_comments(db, current_user, post_id, page, limit)
     return ok(result, "Comments retrieved")
 
 

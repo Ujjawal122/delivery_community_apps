@@ -9,6 +9,8 @@ from .community import Community, CommunityMember, MemberRole  # noqa: F401
 from .post import Post, PostVote, PostType, Comment, CommentVote, Bookmark  # noqa: F401
 from .hazard import HazardReport, HazardImage, HazardVote      # noqa: F401
 from .gate import Gate, GateReview                             # noqa: F401
+from .chat import Conversation, ConversationMember, Message, ConversationType  # noqa: F401
+from .follow import Follow                                     # noqa: F401
 
 __all__ = [
     "Base",
@@ -30,4 +32,9 @@ __all__ = [
     "HazardVote",
     "Gate",
     "GateReview",
+    "Conversation",
+    "ConversationMember",
+    "Message",
+    "ConversationType",
+    "Follow",
 ]

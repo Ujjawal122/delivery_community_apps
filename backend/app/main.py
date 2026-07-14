@@ -19,6 +19,8 @@ from app.routers.community import router as community_router
 from app.routers.location import router as location_router
 from app.routers.hazard import router as hazard_router
 from app.routers.gate import router as gate_router
+from app.routers.chat import router as chat_router
+from app.routers.notification import router as notification_router
 
 logger = get_logger(__name__)
 
@@ -67,6 +69,8 @@ app.include_router(community_router)
 app.include_router(location_router)
 app.include_router(hazard_router)
 app.include_router(gate_router)
+app.include_router(chat_router)
+app.include_router(notification_router)
 
 
 # ── Health ─────────────────────────────────────────────────────────

@@ -44,6 +44,8 @@ class PostRepository(BaseRepository[Post]):
         )
         if latitude is not None and longitude is not None:
             post.location = ST_SetSRID(ST_MakePoint(longitude, latitude), 4326)
+            post.latitude = latitude
+            post.longitude = longitude
             
         self.add(post)
         await self.flush()

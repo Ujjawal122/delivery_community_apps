@@ -62,3 +62,27 @@ async def check_membership_status(
 ):
     result = await CommunityService.check_membership_status(db, current_user, community_id)
     return ok(result, "Status retrieved")
+
+@router.post("/communities/{community_id}/join-requests/{target_user_id}/approve", response_model=ApiResponse,
+             summary="Approve a join request")
+async def approve_join_request(
+    community_id: uuid.UUID,
+    target_user_id: uuid.UUID,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    result = await CommunityService.handle_join_request(db, current_user, community_id, target_user_id, "approve")
+    await db.commit()
+    return ok(result, "Join request approved")
+
+@router.post("/communities/{community_id}/join-requests/{target_user_id}/reject", response_model=ApiResponse,
+             summary="Reject a join request")
+async def reject_join_request(
+    community_id: uuid.UUID,
+    target_user_id: uuid.UUID,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    result = await CommunityService.handle_join_request(db, current_user, community_id, target_user_id, "reject")
+    await db.commit()
+    return ok(result, "Join request rejected")

@@ -27,6 +27,8 @@ async def create_gate(
         society_name=data.society_name,
         address=data.address,
         location=point,
+        latitude=data.latitude,
+        longitude=data.longitude,
     )
     db.add(new_gate)
     await db.commit()

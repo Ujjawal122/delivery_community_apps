@@ -14,9 +14,10 @@ from db.session import get_db
 from app.models.user import User
 from app.services.jwt_service import JWTService
 
-__all__ = ["get_db", "get_redis", "get_current_user"]
+__all__ = ["get_db", "get_redis", "get_current_user", "get_current_user_optional"]
 
 _bearer_scheme = HTTPBearer(auto_error=True)
+_optional_bearer_scheme = HTTPBearer(auto_error=False)
 
 
 # ── Redis dependency ───────────────────────────────────────────────
@@ -91,3 +92,16 @@ async def get_current_user(
     request.state.jti = jti
 
     return user
+
+async def get_current_user_optional(
+    request: Request,
+    credentials: HTTPAuthorizationCredentials | None = Depends(_optional_bearer_scheme),
+    db: AsyncSession = Depends(get_db),
+    redis: Redis = Depends(get_redis),
+) -> User | None:
+    if not credentials:
+        return None
+    try:
+        return await get_current_user(request, credentials, db, redis)
+    except HTTPException:
+        return None

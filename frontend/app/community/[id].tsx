@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, Alert } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, ActivityIndicator, Alert, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { getCommunity, checkCommunityMembership, joinCommunity, getCommunityPosts, votePost } from '../api/client';
@@ -151,8 +151,27 @@ export default function CommunityScreen() {
       </View>
 
       {community.about && (
-        <View className="px-4 py-3 bg-white dark:bg-slate-800 mb-2 border-b border-slate-200 dark:border-slate-700">
+        <View className="px-4 py-3 bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700">
           <Text className="text-slate-700 dark:text-slate-300">{community.about}</Text>
+        </View>
+      )}
+
+      {/* Creator Info */}
+      {community.creator && (
+        <View className="px-4 py-3 bg-white dark:bg-slate-800 mb-2 border-b border-slate-200 dark:border-slate-700 flex-row items-center">
+          <Text className="text-slate-500 dark:text-slate-400 text-sm mr-2">Created by</Text>
+          {community.creator.avatar ? (
+            <Image source={{ uri: community.creator.avatar }} className="w-6 h-6 rounded-full mr-2" />
+          ) : (
+            <View className="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-900 items-center justify-center mr-2">
+              <Text className="text-blue-600 dark:text-blue-300 text-xs font-bold">
+                {community.creator.full_name.charAt(0).toUpperCase()}
+              </Text>
+            </View>
+          )}
+          <Text className="text-slate-800 dark:text-slate-200 font-medium">
+            {community.creator.full_name}
+          </Text>
         </View>
       )}
 

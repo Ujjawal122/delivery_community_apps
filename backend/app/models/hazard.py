@@ -1,11 +1,13 @@
 import uuid
 import enum
 from datetime import datetime, timezone
+from typing import cast, Any
 
-from sqlalchemy import Column, String, Text, Integer, ForeignKey, Enum, DateTime, UniqueConstraint
+from sqlalchemy import Column, String, Text, Integer, ForeignKey, Enum, DateTime, UniqueConstraint, Float
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from geoalchemy2 import Geography
+from shapely.geometry import Point
 
 from .base import Base, TimestampMixin
 
@@ -41,6 +43,9 @@ class HazardReport(Base, TimestampMixin):
     reporter = relationship("User", back_populates="hazard_reports")
     images = relationship("HazardImage", back_populates="hazard", cascade="all, delete-orphan")
     votes = relationship("HazardVote", back_populates="hazard", cascade="all, delete-orphan")
+
+    latitude = Column(Float, nullable=True)
+    longitude = Column(Float, nullable=True)
 
 
 class HazardImage(Base):

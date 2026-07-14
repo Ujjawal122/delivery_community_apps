@@ -53,6 +53,7 @@ class Community(Base, TimestampMixin):
     creator = relationship("User", back_populates="communities_created")
     members = relationship("CommunityMember", back_populates="community", cascade="all, delete-orphan")
     posts = relationship("Post", back_populates="community")
+    conversations = relationship("Conversation", back_populates="community", cascade="all, delete-orphan")
 
 
 class CommunityMember(Base):

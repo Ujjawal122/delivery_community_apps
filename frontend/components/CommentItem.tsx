@@ -11,7 +11,6 @@ interface CommentItemProps {
 }
 
 export default function CommentItem({ comment, onReply, onUpvote, onDownvote, isReply = false }: CommentItemProps) {
-  const votesCount = (comment.upvotes_count || 0) - (comment.downvotes_count || 0);
 
   return (
     <View className={`bg-white dark:bg-zinc-900 p-4 mb-2 border-b border-zinc-100 dark:border-zinc-800 ${isReply ? 'ml-8 border-l-2 border-l-blue-200 dark:border-l-blue-900 rounded-l-none' : 'rounded-xl shadow-sm'}`}>
@@ -44,15 +43,18 @@ export default function CommentItem({ comment, onReply, onUpvote, onDownvote, is
 
       {/* Action Bar */}
       <View className="flex-row items-center pl-10">
-        <View className="flex-row items-center space-x-3 mr-4">
-          <TouchableOpacity onPress={onUpvote} className="flex-row items-center">
-            <Ionicons name="arrow-up-outline" size={16} color="gray" />
+        <View className="flex-row items-center space-x-1 mr-4">
+          <TouchableOpacity onPress={onUpvote} className="flex-row items-center p-1 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800">
+            <Ionicons name="arrow-up-outline" size={16} color={comment.user_vote === 1 ? '#3b82f6' : 'gray'} />
+            <Text className={`font-medium px-1 text-sm ${comment.user_vote === 1 ? 'text-blue-500' : 'text-zinc-600 dark:text-zinc-400'}`}>
+              {comment.upvotes_count || 0}
+            </Text>
           </TouchableOpacity>
-          <Text className="font-medium text-zinc-600 dark:text-zinc-400 px-1 text-sm">
-            {votesCount}
-          </Text>
-          <TouchableOpacity onPress={onDownvote} className="flex-row items-center">
-            <Ionicons name="arrow-down-outline" size={16} color="gray" />
+          <TouchableOpacity onPress={onDownvote} className="flex-row items-center p-1 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800">
+            <Ionicons name="arrow-down-outline" size={16} color={comment.user_vote === -1 ? '#ef4444' : 'gray'} />
+            <Text className={`font-medium px-1 text-sm ${comment.user_vote === -1 ? 'text-red-500' : 'text-zinc-600 dark:text-zinc-400'}`}>
+              {comment.downvotes_count || 0}
+            </Text>
           </TouchableOpacity>
         </View>
 

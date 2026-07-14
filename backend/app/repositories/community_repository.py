@@ -41,13 +41,24 @@ class CommunityRepository(BaseRepository[Community]):
         await self.refresh(community)
         return community
 
+    async def get_by_id(self, pk: uuid.UUID) -> Optional[Community]:
+        from sqlalchemy.orm import selectinload
+        result = await self.db.execute(
+            select(Community)
+            .options(selectinload(Community.creator))
+            .where(Community.id == pk)
+        )
+        return result.scalar_one_or_none()
+
     async def list_communities(
         self,
         offset: int = 0,
         limit: int = 20,
     ) -> Sequence[Community]:
+        from sqlalchemy.orm import selectinload
         result = await self.db.execute(
             select(Community)
+            .options(selectinload(Community.creator))
             .order_by(Community.created_at.desc())
             .offset(offset)
             .limit(limit)
@@ -82,4 +93,12 @@ class CommunityRepository(BaseRepository[Community]):
         req = CommunityJoinRequest(user_id=user_id, community_id=community_id, status=JoinRequestStatus.pending)
         self.db.add(req)
         await self.flush()
+        return req
+        
+    async def update_join_request_status(self, community_id: uuid.UUID, user_id: uuid.UUID, status: str):
+        from app.models.community import JoinRequestStatus
+        req = await self.get_join_request(community_id, user_id)
+        if req:
+            req.status = JoinRequestStatus(status)
+            await self.flush()
         return req

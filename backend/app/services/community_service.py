@@ -29,6 +29,7 @@ class CommunityService:
             about=data.about,
             created_by=current_user.id,
         )
+        community.creator = current_user
         return CommunityResponse.model_validate(community)
 
     @staticmethod
@@ -72,8 +73,22 @@ class CommunityService:
                 return {"status": req.status.value}
             
             await repo.create_join_request(community_id, current_user.id)
+            
+            # Send notification to the community creator
+            if community.created_by:
+                from app.services.notification_service import NotificationService
+                from app.models.auth import NotificationType
+                await NotificationService.create_notification(
+                    db=db,
+                    user_id=community.created_by,
+                    title="New Join Request",
+                    body=f"{current_user.full_name} wants to join {community.name}.",
+                    notification_type=NotificationType.community_join_request,
+                    actor_id=current_user.id,
+                    entity_id=str(community_id)
+                )
+            
             return {"status": "pending"}
-
     @staticmethod
     async def check_membership_status(db: AsyncSession, current_user: User, community_id: uuid.UUID):
         repo = CommunityRepository(db)
@@ -89,3 +104,53 @@ class CommunityService:
         req_status = req.status.value if req else None
         
         return {"is_member": False, "role": None, "join_request_status": req_status}
+        
+    @staticmethod
+    async def handle_join_request(db: AsyncSession, current_user: User, community_id: uuid.UUID, target_user_id: uuid.UUID, action: str):
+        repo = CommunityRepository(db)
+        community = await repo.get_by_id(community_id)
+        if not community:
+            raise NotFoundError("Community not found")
+            
+        # Verify the current_user is the creator or admin
+        if community.created_by != current_user.id:
+            raise Exception("Only community creators can approve or reject join requests.")
+            
+        req = await repo.get_join_request(community_id, target_user_id)
+        current_status = req.status.value if hasattr(req.status, 'value') else req.status if req else None
+        if not req or current_status != "pending":
+            raise Exception("Join request not found or already processed.")
+            
+        if action == "approve":
+            await repo.update_join_request_status(community_id, target_user_id, "approved")
+            await repo.add_member(community_id, target_user_id)
+            
+            from app.services.notification_service import NotificationService
+            from app.models.auth import NotificationType
+            await NotificationService.create_notification(
+                db=db,
+                user_id=target_user_id,
+                title="Join Request Approved",
+                body=f"Your request to join {community.name} was approved.",
+                notification_type=NotificationType.community_approved,
+                actor_id=current_user.id,
+                entity_id=str(community_id)
+            )
+            return {"status": "approved"}
+        elif action == "reject":
+            await repo.update_join_request_status(community_id, target_user_id, "rejected")
+            
+            from app.services.notification_service import NotificationService
+            from app.models.auth import NotificationType
+            await NotificationService.create_notification(
+                db=db,
+                user_id=target_user_id,
+                title="Join Request Rejected",
+                body=f"Your request to join {community.name} was rejected.",
+                notification_type=NotificationType.community_rejected,
+                actor_id=current_user.id,
+                entity_id=str(community_id)
+            )
+            return {"status": "rejected"}
+        else:
+            raise ValueError("Invalid action")

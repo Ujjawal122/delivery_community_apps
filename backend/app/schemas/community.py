@@ -9,6 +9,8 @@ class CommunityCreate(BaseModel):
     purpose: str = Field("other", description="Purpose: education, fun, technology, etc.")
     is_public: bool = Field(True, description="Public or Private community")
 
+from app.schemas.user import UserResponse
+
 class CommunityResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
@@ -19,6 +21,7 @@ class CommunityResponse(BaseModel):
     purpose: str
     is_public: bool
     created_by: Optional[UUID] = None
+    creator: Optional[UserResponse] = None
     created_at: datetime
 
 

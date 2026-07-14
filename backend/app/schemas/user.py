@@ -26,6 +26,13 @@ class UserResponse(BaseModel):
     created_at: datetime
     updated_at: datetime
 
+    @field_validator("phone_number", mode="before")
+    @classmethod
+    def coerce_phone_number(cls, v: any) -> Optional[str]:
+        if v is not None:
+            return str(v)
+        return v
+
 
 # ── Profile update ─────────────────────────────────────────────────
 
@@ -42,6 +49,13 @@ class UpdateProfileRequest(BaseModel):
     interests: Optional[list[str]] = Field(None, description="List of user interests")
     latitude: Optional[float] = Field(None, description="User's latitude")
     longitude: Optional[float] = Field(None, description="User's longitude")
+
+    @field_validator("phone_number", mode="before")
+    @classmethod
+    def coerce_phone_number(cls, v: any) -> Optional[str]:
+        if v is not None:
+            return str(v)
+        return v
 
 
 # ── Account settings ───────────────────────────────────────────────

@@ -3,7 +3,7 @@ import enum
 from typing import Any, cast
 from datetime import datetime, timezone
 
-from sqlalchemy import Column, String, Text, Integer, ForeignKey, UniqueConstraint, Enum, DateTime
+from sqlalchemy import Column, String, Text, Integer, ForeignKey, UniqueConstraint, Enum, DateTime, Float
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from geoalchemy2 import Geometry
@@ -45,19 +45,8 @@ class Post(Base, TimestampMixin):
     upvotes_count = Column(Integer, default=0, nullable=False)
     downvotes_count = Column(Integer, default=0, nullable=False)
 
-    @property
-    def latitude(self) -> float | None:
-        if self.location is None:
-            return None
-        from geoalchemy2.shape import to_shape
-        return cast(Point, to_shape(cast(Any, self.location))).y
-
-    @property
-    def longitude(self) -> float | None:
-        if self.location is None:
-            return None
-        from geoalchemy2.shape import to_shape
-        return cast(Point, to_shape(cast(Any, self.location))).x
+    latitude = Column(Float, nullable=True)
+    longitude = Column(Float, nullable=True)
 
     author = relationship("User", back_populates="posts")
     community = relationship("Community", back_populates="posts")
@@ -90,6 +79,8 @@ class Comment(Base, TimestampMixin):
     parent_id = Column(UUID(as_uuid=True), ForeignKey("comments.id", ondelete="CASCADE"), nullable=True)  # nested replies
     replied_to_user_id = Column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="SET NULL"), nullable=True)
     content = Column(Text, nullable=False)
+    upvotes_count = Column(Integer, default=0, nullable=False)
+    downvotes_count = Column(Integer, default=0, nullable=False)
 
     post = relationship("Post", back_populates="comments")
     author = relationship("User", foreign_keys=[user_id], back_populates="comments")

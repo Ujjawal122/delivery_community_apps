@@ -89,16 +89,39 @@ export default function PostScreen() {
     try {
       await voteComment(post.id, commentId, voteType);
       // Optimistic update
-      setComments(prev => prev.map(c => {
-        if (c.id === commentId) {
-          return {
-            ...c,
-            upvotes_count: (c.upvotes_count || 0) + (voteType === 1 ? 1 : 0),
-            downvotes_count: (c.downvotes_count || 0) + (voteType === -1 ? 1 : 0)
-          };
-        }
-        return c;
-      }));
+      const updateCommentRecursive = (commentsList: any[]): any[] => {
+        return commentsList.map(c => {
+          if (c.id === commentId) {
+            const currentVote = c.user_vote;
+            const newVote = currentVote === voteType ? null : voteType;
+            
+            let up = c.upvotes_count || 0;
+            let down = c.downvotes_count || 0;
+            
+            if (currentVote === 1) up = Math.max(0, up - 1);
+            if (currentVote === -1) down = Math.max(0, down - 1);
+            
+            if (newVote === 1) up++;
+            if (newVote === -1) down++;
+            
+            return {
+              ...c,
+              upvotes_count: up,
+              downvotes_count: down,
+              user_vote: newVote
+            };
+          }
+          if (c.replies && c.replies.length > 0) {
+            return {
+              ...c,
+              replies: updateCommentRecursive(c.replies)
+            };
+          }
+          return c;
+        });
+      };
+
+      setComments(prev => updateCommentRecursive(prev));
     } catch (e) {
       console.error(e);
     }

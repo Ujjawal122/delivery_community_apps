@@ -106,6 +106,9 @@ class CommentResponse(BaseModel):
     content: str
     author: AuthorSnippet
     replied_to_user: Optional[AuthorSnippet] = None
+    upvotes_count: int = 0
+    downvotes_count: int = 0
+    user_vote: Optional[int] = None
     replies: List["CommentResponse"] = Field(default_factory=list)
     created_at: datetime
     updated_at: datetime

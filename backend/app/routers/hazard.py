@@ -27,6 +27,8 @@ async def create_hazard(
         category_id=data.category_id,
         severity=data.severity,
         location=WKTElement(point, srid=4326),
+        latitude=data.latitude,
+        longitude=data.longitude,
     )
     db.add(new_hazard)
     await db.commit()

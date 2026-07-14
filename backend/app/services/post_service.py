@@ -338,6 +338,7 @@ class CommentService:
     @staticmethod
     async def list_comments(
         db: AsyncSession,
+        current_user: Optional[User],
         post_id: uuid.UUID,
         page: int = 1,
         limit: int = 50,
@@ -349,7 +350,35 @@ class CommentService:
         comment_repo = CommentRepository(db)
         offset = _page_offset(page, limit)
         comments = await comment_repo.list_top_level(post_id, offset, limit)
-        return [_comment_response(c) for c in comments]
+        responses = [_comment_response(c) for c in comments]
+
+        if current_user:
+            from app.models.post import CommentVote
+            from sqlalchemy import select
+            
+            def get_ids(resps: list[CommentResponse]) -> list[uuid.UUID]:
+                ids = []
+                for r in resps:
+                    ids.append(r.id)
+                    ids.extend(get_ids(r.replies))
+                return ids
+            
+            all_ids = get_ids(responses)
+            if all_ids:
+                result = await db.execute(
+                    select(CommentVote.comment_id, CommentVote.vote_type)
+                    .where(CommentVote.user_id == current_user.id, CommentVote.comment_id.in_(all_ids))
+                )
+                vote_map = dict(result.all())
+                
+                def set_votes(resps: list[CommentResponse]):
+                    for r in resps:
+                        r.user_vote = vote_map.get(r.id)
+                        set_votes(r.replies)
+                
+                set_votes(responses)
+
+        return responses
 
     # ── Update comment ─────────────────────────────────────────
 
@@ -407,13 +436,31 @@ class CommentService:
         vote_value = 1 if vote_type == "up" else -1
         old_type = await comment_repo.upsert_vote(current_user.id, comment_id, vote_value)
 
-        # Same toggle logic as post votes
-        if old_type == vote_value:
+        if old_type is None:
+            if vote_value == 1:
+                comment.upvotes_count += 1
+            else:
+                comment.downvotes_count += 1
+        elif old_type != vote_value:
+            if vote_value == 1:
+                comment.upvotes_count += 1
+                comment.downvotes_count = max(0, comment.downvotes_count - 1)
+            else:
+                comment.downvotes_count += 1
+                comment.upvotes_count = max(0, comment.upvotes_count - 1)
+        elif old_type == vote_value:
             await comment_repo.remove_vote(current_user.id, comment_id)
+            if vote_value == 1:
+                comment.upvotes_count = max(0, comment.upvotes_count - 1)
+            else:
+                comment.downvotes_count = max(0, comment.downvotes_count - 1)
+            vote_value = None
 
         await db.flush()
         await db.refresh(comment)
-        return _comment_response(comment)
+        resp = _comment_response(comment)
+        resp.user_vote = vote_value
+        return resp
 
     # ── Remove comment vote ────────────────────────────────────
 
@@ -432,6 +479,13 @@ class CommentService:
         if old_type is None:
             raise BadRequestError("You have not voted on this comment")
 
+        if old_type == 1:
+            comment.upvotes_count = max(0, comment.upvotes_count - 1)
+        elif old_type == -1:
+            comment.downvotes_count = max(0, comment.downvotes_count - 1)
+
         await db.flush()
         await db.refresh(comment)
-        return _comment_response(comment)
+        resp = _comment_response(comment)
+        resp.user_vote = None
+        return resp
