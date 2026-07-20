@@ -29,7 +29,13 @@ function NotificationItem({
   router: any;
 }) {
   const markAsRead = useNotificationStore((state) => state.markAsRead);
-  const [actionTaken, setActionTaken] = useState<'approved' | 'rejected' | null>(null);
+  const [actionTaken, setActionTaken] = useState<'approved' | 'rejected' | null>(
+    item.type === 'community_join_request' &&
+    item.extra_data?.request_status &&
+    item.extra_data.request_status !== 'pending'
+      ? item.extra_data.request_status
+      : null
+  );
 
   const handlePress = () => {
     if (!item.is_read) {

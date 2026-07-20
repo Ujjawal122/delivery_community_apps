@@ -47,7 +47,7 @@ const { width } = Dimensions.get('window');
 // ── Types ────────────────────────────────────────────────────────────────────
 interface LogEntry {
   id: number;
-  time: string;
+  time: string; 
   level: 'info' | 'warn' | 'error' | 'success';
   message: string;
 }
@@ -74,7 +74,6 @@ const LOG_ICONS = {
   success: 'checkmark-circle-outline',
 };
 
-// ── Animated pulsing dot ─────────────────────────────────────────────────────
 function PulseDot({ inside }: { inside: boolean }) {
   const scale = useSharedValue(1);
   useEffect(() => {

@@ -1,6 +1,8 @@
 import { create } from 'zustand';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import apiClient from "../app/api/client"
+import { useChatStore } from './chatStore';
+import { useNotificationStore } from './notificationStore';
 
 export interface User {
   id: string;
@@ -51,6 +53,13 @@ export const useAuthStore = create<AuthState>((set) => ({
     }
     await AsyncStorage.removeItem('access_token');
     await AsyncStorage.removeItem('refresh_token');
+    
+    // Reset chat store state
+    useChatStore.getState().reset();
+    
+    // Reset notification store state
+    useNotificationStore.getState().reset();
+
     set({ user: null, token: null, isAuthenticated: false, isLoading: false });
   },
 

@@ -43,6 +43,7 @@ class ConversationResponse(BaseModel):
     members: List[ConversationMemberResponse] = []
     # We may include the latest message for the chat list view
     latest_message: Optional[MessageResponse] = None
+    unread_count: int = 0
 
     model_config = ConfigDict(from_attributes=True)
 

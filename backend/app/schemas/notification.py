@@ -25,6 +25,7 @@ class NotificationResponse(BaseModel):
     is_read: bool
     created_at: datetime
     
+    extra_data: Optional[dict] = None
     actor: Optional[NotificationActor] = None
 
     class Config:

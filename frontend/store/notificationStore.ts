@@ -20,6 +20,10 @@ export interface AppNotification {
   entity_id: string | null;
   is_read: boolean;
   created_at: string;
+  extra_data?: {
+    request_status?: 'pending' | 'approved' | 'rejected';
+    [key: string]: any;
+  } | null;
   actor: NotificationActor | null;
 }
 
@@ -38,6 +42,7 @@ interface NotificationState {
   incrementUnreadCount: () => void;
   markAsRead: (id: string) => Promise<void>;
   markAllAsRead: () => Promise<void>;
+  reset: () => void;
 }
 
 export const useNotificationStore = create<NotificationState>((set, get) => ({
@@ -46,6 +51,14 @@ export const useNotificationStore = create<NotificationState>((set, get) => ({
   loading: false,
   page: 1,
   hasMore: true,
+
+  reset: () => set({
+    notifications: [],
+    unreadCount: 0,
+    loading: false,
+    page: 1,
+    hasMore: true,
+  }),
 
   fetchInitial: async () => {
     set({ loading: true, page: 1 });

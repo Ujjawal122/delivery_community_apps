@@ -40,6 +40,9 @@ async def get_notifications(
     count_stmt = select(func.count()).select_from(Notification).where(Notification.user_id == current_user.id)
     total = await db.scalar(count_stmt)
     
+    from app.models.community import CommunityJoinRequest
+    from app.models.auth import NotificationType
+    
     items = []
     for n in notifications:
         actor_data = None
@@ -49,6 +52,21 @@ async def get_notifications(
                 "full_name": n.actor.full_name,
                 "avatar": n.actor.avatar
             }
+            
+        extra_data = None
+        if n.type == NotificationType.community_join_request:
+            if n.entity_id and n.actor_id:
+                try:
+                    stmt_req = select(CommunityJoinRequest.status).where(
+                        CommunityJoinRequest.community_id == UUID(n.entity_id),
+                        CommunityJoinRequest.user_id == n.actor_id
+                    )
+                    req_status = await db.scalar(stmt_req)
+                    if req_status:
+                        extra_data = {"request_status": req_status.value}
+                except Exception:
+                    pass
+                    
         items.append({
             "id": n.id,
             "title": n.title,
@@ -57,6 +75,7 @@ async def get_notifications(
             "entity_id": n.entity_id,
             "is_read": n.is_read,
             "created_at": n.created_at,
+            "extra_data": extra_data,
             "actor": actor_data
         })
         

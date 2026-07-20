@@ -8,10 +8,11 @@ import { useChatStore } from '../store/chatStore';
 const WS_URL = 'ws://10.0.2.2:8000/chat/ws';
 
 
+let globalWs: WebSocket | null = null;
+
 export function useWebSocket() {
   const ws = useRef<WebSocket | null>(null);
 
-  
   const addMessage = useChatStore((state) => state.addMessage);
   const setOnlineStatus = useChatStore((state) => state.setOnlineStatus);
   const setTypingStatus = useChatStore((state) => state.setTypingStatus);
@@ -19,16 +20,29 @@ export function useWebSocket() {
   useEffect(() => {
     const connectWs = async () => {
       const token = await AsyncStorage.getItem('access_token');
-      if (!token) return;
+      if (!token) {
+        if (globalWs) {
+          globalWs.close();
+          globalWs = null;
+        }
+        return;
+      }
 
-      ws.current = new WebSocket(WS_URL);
+      if (globalWs && (globalWs.readyState === WebSocket.OPEN || globalWs.readyState === WebSocket.CONNECTING)) {
+        ws.current = globalWs;
+        return;
+      }
 
-      ws.current.onopen = () => {
+      const newWs = new WebSocket(WS_URL);
+      globalWs = newWs;
+      ws.current = newWs;
+
+      newWs.onopen = () => {
         console.log('WebSocket Connected');
-        ws.current?.send(JSON.stringify({ type: 'auth', token }));
+        newWs.send(JSON.stringify({ type: 'auth', token }));
       };
 
-      ws.current.onmessage = (event) => {
+      newWs.onmessage = (event) => {
         try {
           const data = JSON.parse(event.data);
           
@@ -65,21 +79,21 @@ export function useWebSocket() {
         }
       };
 
-    ws.current.onerror = (error) => {
-      console.error('WebSocket Error:', error);
-    };
+      newWs.onerror = (error) => {
+        console.log('WebSocket Error:', error);
+      };
 
-    ws.current.onclose = () => {
-      console.log('WebSocket Disconnected');
-    };
-
+      newWs.onclose = () => {
+        console.log('WebSocket Disconnected');
+        if (globalWs === newWs) {
+          globalWs = null;
+        }
+      };
     };
 
     connectWs();
 
-    return () => {
-      ws.current?.close();
-    };
+    // Do NOT close globalWs on unmount, otherwise navigating between screens kills the socket
   }, []);
 
   const sendMessage = (conversationId: string, content: string) => {
@@ -88,13 +102,20 @@ export function useWebSocket() {
   };
 
   const sendTyping = (conversationId: string) => {
-    if (ws.current?.readyState === WebSocket.OPEN) {
-      ws.current.send(JSON.stringify({
+    if (globalWs?.readyState === WebSocket.OPEN) {
+      globalWs.send(JSON.stringify({
         type: 'typing',
         conversation_id: conversationId
       }));
     }
   };
 
-  return { sendTyping };
+  const disconnect = () => {
+    if (globalWs) {
+      globalWs.close();
+      globalWs = null;
+    }
+  };
+
+  return { sendTyping, disconnect };
 }

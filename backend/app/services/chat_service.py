@@ -80,20 +80,21 @@ async def get_user_conversations(db: AsyncSession, user_id: uuid.UUID) -> List[C
     result = await db.execute(stmt)
     conversations = list(result.scalars().unique().all())
     
-    # Sort messages and find the latest one
+    # Sort messages and find the latest one, and calculate unread count
     for conv in conversations:
         conv.messages.sort(key=lambda m: m.created_at, reverse=True)
         conv.latest_message = conv.messages[0] if conv.messages else None
         
+        member = next((m for m in conv.members if m.user_id == user_id), None)
+        if member and member.last_read_at:
+            conv.unread_count = sum(1 for m in conv.messages if m.created_at > member.last_read_at and m.sender_id != user_id)
+        else:
+            conv.unread_count = 0
+        
     return conversations
 
 async def create_direct_conversation(db: AsyncSession, user1_id: uuid.UUID, user2_id: uuid.UUID) -> Conversation:
-    # Wait, SQLAlchemy group_by with func.count can be tricky. Let's just do it directly.
-    # We can fetch all direct convos for user1 and see if user2 is in them.
-
-    # Alternatively, create a new one every time, but it's better to reuse.
-    # Let's write the query to find existing direct conv
-    # This is a bit complex, let's just do:
+   
     user1_convos_stmt = select(ConversationMember.conversation_id).where(ConversationMember.user_id == user1_id)
     result1 = await db.execute(user1_convos_stmt)
     user1_convos = [row[0] for row in result1.all()]

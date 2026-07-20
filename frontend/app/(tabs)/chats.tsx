@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useState, useCallback, useEffect } from 'react';
+import { useFocusEffect } from 'expo-router';
 import {
   View,
   Text,
@@ -27,7 +28,7 @@ import { useWebSocket } from '../../services/useWebSocket';
 import { useTheme } from '../../constants/theme';
 import ThemeToggle from '../../components/ThemeToggle';
 
-// ── Pulsing Online Dot ─────────────────────────────────────────────────────
+// ── Pulsing Online Dot ─────────────────────────────────────────────────────────
 function OnlineDot() {
   const scale = useSharedValue(1);
   const opacity = useSharedValue(1);
@@ -58,7 +59,7 @@ function OnlineDot() {
   );
 }
 
-// ── Conversation Item ─────────────────────────────────────────────────────
+// ── Conversation Item ─────────────────────────────────────────────────────────
 function ConversationItem({
   item,
   index,
@@ -125,18 +126,32 @@ export default function ChatsListScreen() {
 
   useWebSocket();
 
-  useEffect(() => { fetchConversations(); }, []);
+  useFocusEffect(
+    useCallback(() => {
+      let isActive = true;
 
-  const fetchConversations = async () => {
-    try {
-      const res = await apiClient.get('/chat/conversations');
-      setConversations(res.data);
-    } catch (error) {
-      console.error('Failed to load conversations', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+      const fetchConversations = async () => {
+        try {
+          const res = await apiClient.get('/chat/conversations');
+          if (isActive) {
+            setConversations(res.data);
+          }
+        } catch (error) {
+          console.error('Failed to load conversations', error);
+        } finally {
+          if (isActive) {
+            setLoading(false);
+          }
+        }
+      };
+
+      fetchConversations();
+
+      return () => {
+        isActive = false;
+      };
+    }, [])
+  );
 
   return (
     <View style={[styles.root, { backgroundColor: theme.bg }]}>
@@ -272,7 +287,7 @@ const styles = StyleSheet.create({
   },
   onlineDotCore: {
     width: 10,
-    height: 10,
+    height: 14,
     borderRadius: 5,
     backgroundColor: '#22C55E',
     borderWidth: 2,
@@ -305,3 +320,4 @@ const styles = StyleSheet.create({
   emptyTitle: { fontSize: 20, fontWeight: '700' },
   emptySubtitle: { fontSize: 14, textAlign: 'center', lineHeight: 20 },
 });
+

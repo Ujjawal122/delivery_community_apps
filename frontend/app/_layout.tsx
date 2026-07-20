@@ -17,9 +17,10 @@ import { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import 'react-native-reanimated';
 import '../global.css';
-
 import { useColorScheme } from 'nativewind';
 import { useAuthStore } from '../store/authStore';
+import { useChatStore } from '../store/chatStore';
+import { useWebSocket } from '../services/useWebSocket';
 import '../services/locationTracking';
 
 export {
@@ -67,6 +68,8 @@ function RootLayoutNav() {
   const { isAuthenticated } = useAuthStore();
   const segments = useSegments();
   const router = useRouter();
+  
+  const { disconnect } = useWebSocket();
 
   useEffect(() => {
     const inAuthGroup = segments[0] === '(auth)';
@@ -76,6 +79,8 @@ function RootLayoutNav() {
       router.replace('/(tabs)');
     } else if (!isAuthenticated && !inAuthGroup) {
       // If user is NOT authenticated and trying to access app, send to auth
+      disconnect(); // Disconnect websocket when logging out
+      useChatStore.getState().reset(); // Clear chat state for next login
       router.replace('/(auth)/welcome');
     }
   }, [isAuthenticated, segments]);

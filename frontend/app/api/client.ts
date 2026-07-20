@@ -60,9 +60,11 @@ apiClient.interceptors.response.use(
           return apiClient(originalRequest);
         }
       } catch (refreshError) {
-        // If refresh fails, we should log the user out (handled in AuthStore)
-        await AsyncStorage.removeItem('access_token');
-        await AsyncStorage.removeItem('refresh_token');
+        // If refresh fails, log the user out properly to clear all stores
+        // We import it dynamically to avoid circular dependencies if any
+        import('../../store/authStore').then(({ useAuthStore }) => {
+          useAuthStore.getState().logout();
+        });
         return Promise.reject(refreshError);
       }
     }

@@ -3459,3 +3459,539 @@
 {"_e":"metro:bundling:progress","_t":1784012312628,"id":"j","progress":0,"total":1,"current":0}
 {"_e":"metro:bundling:done","_t":1784012318122,"id":"j","total":1,"ms":5590.8732}
 {"_e":"metro:client_log","_t":1784012354901,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"root:init","_t":1784092695937,"format":"v0-jsonl","version":"57.0.6"}
+{"_e":"env:mode","_t":1784092695942,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784092695957,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784092700293,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":true,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784092705352,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784092708431,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784092767250,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784093964768,"id":"5","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784093964773,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784093964872,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784093964973,"id":"5","progress":0.0625,"total":16,"current":4}
+{"_e":"metro:bundling:progress","_t":1784093965103,"id":"5","progress":0.09,"total":30,"current":9}
+{"_e":"metro:bundling:progress","_t":1784093965203,"id":"5","progress":0.09,"total":139,"current":16}
+{"_e":"metro:bundling:progress","_t":1784093965314,"id":"5","progress":0.09,"total":159,"current":20}
+{"_e":"metro:bundling:progress","_t":1784093965421,"id":"5","progress":0.09,"total":192,"current":33}
+{"_e":"metro:bundling:progress","_t":1784093965520,"id":"5","progress":0.09,"total":235,"current":55}
+{"_e":"metro:bundling:progress","_t":1784093965620,"id":"5","progress":0.1412722948870392,"total":290,"current":109}
+{"_e":"metro:bundling:progress","_t":1784093965722,"id":"5","progress":0.16746256509064938,"total":347,"current":142}
+{"_e":"metro:bundling:progress","_t":1784093965834,"id":"5","progress":0.16746256509064938,"total":400,"current":158}
+{"_e":"metro:bundling:progress","_t":1784093966591,"id":"5","progress":0.20325610015584653,"total":417,"current":188}
+{"_e":"metro:bundling:progress","_t":1784093966691,"id":"5","progress":0.2411901234567901,"total":450,"current":221}
+{"_e":"metro:bundling:progress","_t":1784093966792,"id":"5","progress":0.266256,"total":500,"current":258}
+{"_e":"metro:bundling:progress","_t":1784093966894,"id":"5","progress":0.28658429996628754,"total":566,"current":303}
+{"_e":"metro:bundling:progress","_t":1784093966995,"id":"5","progress":0.31593452997612725,"total":596,"current":335}
+{"_e":"metro:bundling:progress","_t":1784093967103,"id":"5","progress":0.3517845028788625,"total":639,"current":379}
+{"_e":"metro:bundling:progress","_t":1784093967213,"id":"5","progress":0.3517845028788625,"total":699,"current":400}
+{"_e":"metro:bundling:progress","_t":1784093967313,"id":"5","progress":0.352985110543475,"total":749,"current":445}
+{"_e":"metro:bundling:progress","_t":1784093967413,"id":"5","progress":0.44100581562272567,"total":774,"current":514}
+{"_e":"metro:bundling:progress","_t":1784093967521,"id":"5","progress":0.48084607597634405,"total":822,"current":570}
+{"_e":"metro:bundling:progress","_t":1784093967621,"id":"5","progress":0.48084607597634405,"total":913,"current":599}
+{"_e":"metro:bundling:progress","_t":1784093967724,"id":"5","progress":0.48084607597634405,"total":989,"current":662}
+{"_e":"metro:bundling:progress","_t":1784093967929,"id":"5","progress":0.48084607597634405,"total":1013,"current":694}
+{"_e":"metro:bundling:progress","_t":1784093967938,"id":"5","progress":0.48084607597634405,"total":1013,"current":695}
+{"_e":"metro:bundling:progress","_t":1784093968038,"id":"5","progress":0.5094095260488714,"total":1027,"current":733}
+{"_e":"metro:bundling:progress","_t":1784093968141,"id":"5","progress":0.5416848167718696,"total":1053,"current":775}
+{"_e":"metro:bundling:progress","_t":1784093968240,"id":"5","progress":0.587683480617094,"total":1084,"current":831}
+{"_e":"metro:bundling:progress","_t":1784093968344,"id":"5","progress":0.587683480617094,"total":1210,"current":890}
+{"_e":"metro:bundling:progress","_t":1784093968449,"id":"5","progress":0.6108849034148572,"total":1282,"current":1002}
+{"_e":"metro:bundling:progress","_t":1784093968567,"id":"5","progress":0.6161274883299256,"total":1288,"current":1011}
+{"_e":"metro:bundling:progress","_t":1784093968668,"id":"5","progress":0.636845203399964,"total":1317,"current":1051}
+{"_e":"metro:bundling:progress","_t":1784093968768,"id":"5","progress":0.6692014460278002,"total":1352,"current":1106}
+{"_e":"metro:bundling:progress","_t":1784093968868,"id":"5","progress":0.7025509235216576,"total":1409,"current":1181}
+{"_e":"metro:bundling:progress","_t":1784093968968,"id":"5","progress":0.7544367096880285,"total":1461,"current":1269}
+{"_e":"metro:bundling:progress","_t":1784093969069,"id":"5","progress":0.7783371584768742,"total":1486,"current":1311}
+{"_e":"metro:bundling:progress","_t":1784093969168,"id":"5","progress":0.7885627194786845,"total":1518,"current":1348}
+{"_e":"metro:bundling:progress","_t":1784093969269,"id":"5","progress":0.8279152387332834,"total":1576,"current":1434}
+{"_e":"metro:bundling:progress","_t":1784093969368,"id":"5","progress":0.873133242379353,"total":1601,"current":1496}
+{"_e":"metro:bundling:progress","_t":1784093969469,"id":"5","progress":0.9191897552719066,"total":1624,"current":1557}
+{"_e":"metro:bundling:progress","_t":1784093969568,"id":"5","progress":0.9338248890532544,"total":1664,"current":1608}
+{"_e":"metro:bundling:progress","_t":1784093969668,"id":"5","progress":0.9338248890532544,"total":1797,"current":1671}
+{"_e":"metro:bundling:progress","_t":1784093969768,"id":"5","progress":0.9360510089455811,"total":1846,"current":1786}
+{"_e":"metro:bundling:progress","_t":1784093969868,"id":"5","progress":0.9593898501882091,"total":1901,"current":1862}
+{"_e":"metro:bundling:progress","_t":1784093969970,"id":"5","progress":0.9989586046006945,"total":1920,"current":1919}
+{"_e":"metro:bundling:progress","_t":1784093972756,"id":"5","progress":0.999,"total":1920,"current":1920}
+{"_e":"metro:bundling:done","_t":1784093973011,"id":"5","total":1920,"ms":8234.2556}
+{"_e":"metro:client_log","_t":1784093986825,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784093999110,"level":"warn","data":["Background location is limited in Expo Go:\nOn Android, it is not available at all.\nOn iOS, it works when running in the Simulator.\nYou can use this API, and all others, in a development build. Learn more: https://expo.fyi/dev-client."]}
+{"_e":"metro:client_log","_t":1784094017349,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784094140318,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784094176262,"level":"error","data":["[AxiosError: Request failed with status code 500]","\n\n\u001b[1mCall Stack\u001b[22m\n\u001b[2m\u001b[90m  AxiosError#constructor (node_modules\\axios\\dist\\esm\\axios.js:1604:10)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  settle (node_modules\\axios\\dist\\esm\\axios.js:2578:28)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  onloadend (node_modules\\axios\\dist\\esm\\axios.js:3206:15)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  invoke (node_modules\\react-native\\src\\private\\webapis\\dom\\events\\EventTarget.js:424:29)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  dispatch (node_modules\\react-native\\src\\private\\webapis\\dom\\events\\EventTarget.js:310:11)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  INTERNAL_DISPATCH_METHOD_KEY (node_modules\\react-native\\src\\private\\webapis\\dom\\events\\EventTarget.js:246:13)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  dispatchTrustedEvent (node_modules\\react-native\\src\\private\\webapis\\dom\\events\\internals\\EventTargetInternals.js:63:51)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  setReadyState (node_modules\\react-native\\Libraries\\Network\\XMLHttpRequest.js:702:27)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  __didCompleteResponse (node_modules\\react-native\\Libraries\\Network\\XMLHttpRequest.js:438:25)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  apply (<native>)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  RCTNetworking.addListener$argument_1 (node_modules\\react-native\\Libraries\\Network\\XMLHttpRequest.js:602:35)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  apply (<native>)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  emit (node_modules\\react-native\\Libraries\\vendor\\emitter\\EventEmitter.js:137:36)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  apply (<native>)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  RCTDeviceEventEmitterImpl#emit (node_modules\\react-native\\Libraries\\EventEmitter\\RCTDeviceEventEmitter.js:34:17)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  Axios#request (node_modules\\axios\\dist\\esm\\axios.js:4597:58)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  throw (<native>)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  anonymous (address at (InternalBytecode.js:1:9013)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  step (address at (InternalBytecode.js:1:6731)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  anonymous (address at (InternalBytecode.js:1:7923)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  tryCallOne (address at (InternalBytecode.js:1:1296)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  anonymous (address at (InternalBytecode.js:1:4984)\u001b[39m\u001b[22m"]}
+{"_e":"metro:bundling:started","_t":1784095290721,"id":"9","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784095290741,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784095291849,"id":"9","total":1,"ms":1112.5159}
+{"_e":"metro:client_log","_t":1784095308975,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"root:init","_t":1784186501830,"format":"v0-jsonl","version":"57.0.6"}
+{"_e":"env:mode","_t":1784186501834,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784186501848,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784186505625,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":true,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784186511855,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784186516021,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784186552733,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"root:init","_t":1784186623921,"format":"v0-jsonl","version":"57.0.6"}
+{"_e":"env:mode","_t":1784186623922,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784186623929,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784186625812,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":true,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784186628431,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784186629329,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784186661280,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784186674242,"id":"5","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784186674243,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784186674299,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784186674399,"id":"5","progress":0.0625,"total":20,"current":5}
+{"_e":"metro:bundling:progress","_t":1784186674501,"id":"5","progress":0.12249999999999998,"total":40,"current":14}
+{"_e":"metro:bundling:progress","_t":1784186674621,"id":"5","progress":0.12249999999999998,"total":159,"current":20}
+{"_e":"metro:bundling:progress","_t":1784186674677,"id":"5","progress":0.12249999999999998,"total":159,"current":21}
+{"_e":"metro:bundling:progress","_t":1784186674779,"id":"5","progress":0.12249999999999998,"total":226,"current":49}
+{"_e":"metro:bundling:progress","_t":1784186674878,"id":"5","progress":0.12249999999999998,"total":265,"current":77}
+{"_e":"metro:bundling:progress","_t":1784186674978,"id":"5","progress":0.1651196775006299,"total":315,"current":128}
+{"_e":"metro:bundling:progress","_t":1784186675115,"id":"5","progress":0.1651196775006299,"total":400,"current":158}
+{"_e":"metro:bundling:progress","_t":1784186675289,"id":"5","progress":0.1651196775006299,"total":400,"current":159}
+{"_e":"metro:bundling:progress","_t":1784186675390,"id":"5","progress":0.20129643654336737,"total":448,"current":201}
+{"_e":"metro:bundling:progress","_t":1784186675490,"id":"5","progress":0.24476454293628808,"total":475,"current":235}
+{"_e":"metro:bundling:progress","_t":1784186675589,"id":"5","progress":0.2731541473834105,"total":530,"current":277}
+{"_e":"metro:bundling:progress","_t":1784186675690,"id":"5","progress":0.2870600117835199,"total":545,"current":292}
+{"_e":"metro:bundling:progress","_t":1784186675791,"id":"5","progress":0.3099160378361144,"total":582,"current":324}
+{"_e":"metro:bundling:progress","_t":1784186675892,"id":"5","progress":0.32054184939213093,"total":597,"current":338}
+{"_e":"metro:bundling:progress","_t":1784186675991,"id":"5","progress":0.3372080796346739,"total":632,"current":367}
+{"_e":"metro:bundling:progress","_t":1784186676100,"id":"5","progress":0.3372080796346739,"total":699,"current":399}
+{"_e":"metro:bundling:progress","_t":1784186676211,"id":"5","progress":0.3372080796346739,"total":699,"current":400}
+{"_e":"metro:bundling:progress","_t":1784186676311,"id":"5","progress":0.3372080796346739,"total":786,"current":456}
+{"_e":"metro:bundling:progress","_t":1784186676411,"id":"5","progress":0.3944452706722189,"total":820,"current":515}
+{"_e":"metro:bundling:progress","_t":1784186676513,"id":"5","progress":0.4671083277263081,"total":834,"current":570}
+{"_e":"metro:bundling:progress","_t":1784186676620,"id":"5","progress":0.4671083277263081,"total":905,"current":599}
+{"_e":"metro:bundling:progress","_t":1784186676720,"id":"5","progress":0.4671083277263081,"total":973,"current":658}
+{"_e":"metro:bundling:progress","_t":1784186676901,"id":"5","progress":0.4680018593428567,"total":1013,"current":693}
+{"_e":"metro:bundling:progress","_t":1784186676930,"id":"5","progress":0.4693534885579275,"total":1013,"current":694}
+{"_e":"metro:bundling:progress","_t":1784186677031,"id":"5","progress":0.5145597040171908,"total":1033,"current":741}
+{"_e":"metro:bundling:progress","_t":1784186677130,"id":"5","progress":0.5487487569915033,"total":1057,"current":783}
+{"_e":"metro:bundling:progress","_t":1784186677230,"id":"5","progress":0.5785926291848902,"total":1103,"current":839}
+{"_e":"metro:bundling:progress","_t":1784186677330,"id":"5","progress":0.5785926291848902,"total":1263,"current":916}
+{"_e":"metro:bundling:progress","_t":1784186677432,"id":"5","progress":0.6156025289697157,"total":1286,"current":1009}
+{"_e":"metro:bundling:progress","_t":1784186677532,"id":"5","progress":0.6209002567457432,"total":1297,"current":1022}
+{"_e":"metro:bundling:progress","_t":1784186677632,"id":"5","progress":0.6450779058577835,"total":1326,"current":1065}
+{"_e":"metro:bundling:progress","_t":1784186677732,"id":"5","progress":0.6483689630817744,"total":1381,"current":1112}
+{"_e":"metro:bundling:progress","_t":1784186677833,"id":"5","progress":0.7129816619421873,"total":1433,"current":1210}
+{"_e":"metro:bundling:progress","_t":1784186677933,"id":"5","progress":0.7544367096880285,"total":1461,"current":1269}
+{"_e":"metro:bundling:progress","_t":1784186678033,"id":"5","progress":0.7933255749151764,"total":1482,"current":1320}
+{"_e":"metro:bundling:progress","_t":1784186678133,"id":"5","progress":0.8123393489627255,"total":1540,"current":1388}
+{"_e":"metro:bundling:progress","_t":1784186678233,"id":"5","progress":0.8513511993972893,"total":1578,"current":1456}
+{"_e":"metro:bundling:progress","_t":1784186678333,"id":"5","progress":0.9024405888452014,"total":1599,"current":1519}
+{"_e":"metro:bundling:progress","_t":1784186678452,"id":"5","progress":0.9207531358131489,"total":1632,"current":1566}
+{"_e":"metro:bundling:progress","_t":1784186678560,"id":"5","progress":0.9223268138518842,"total":1691,"current":1624}
+{"_e":"metro:bundling:progress","_t":1784186678660,"id":"5","progress":0.938954445332747,"total":1774,"current":1719}
+{"_e":"metro:bundling:progress","_t":1784186678760,"id":"5","progress":0.938954445332747,"total":1836,"current":1734}
+{"_e":"metro:bundling:progress","_t":1784186678860,"id":"5","progress":0.938954445332747,"total":1886,"current":1824}
+{"_e":"metro:bundling:progress","_t":1784186678961,"id":"5","progress":0.9667036992586507,"total":1906,"current":1874}
+{"_e":"metro:bundling:progress","_t":1784186679066,"id":"5","progress":0.9864760984305334,"total":1916,"current":1903}
+{"_e":"metro:bundling:progress","_t":1784186679170,"id":"5","progress":0.9989586046006945,"total":1920,"current":1919}
+{"_e":"metro:bundling:progress","_t":1784186680236,"id":"5","progress":0.999,"total":1920,"current":1920}
+{"_e":"metro:bundling:done","_t":1784186680401,"id":"5","total":1920,"ms":6158.6955}
+{"_e":"metro:client_log","_t":1784186698523,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:bundling:started","_t":1784186768108,"id":"6","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784186768108,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784186768248,"id":"6","total":1,"ms":139.3209}
+{"_e":"metro:client_log","_t":1784186775382,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:bundling:started","_t":1784187087574,"id":"9","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784187087577,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187087623,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187087724,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187088026,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187088813,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187088914,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089014,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089116,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089215,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089315,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089416,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089516,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089616,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089716,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089816,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187089916,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187090016,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187090117,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187090216,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187090316,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187090416,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187090516,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187090622,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784187090877,"id":"9","total":1,"ms":3299.9843}
+{"_e":"metro:client_log","_t":1784187119911,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784187225390,"level":"warn","data":["Background location is limited in Expo Go:\nOn Android, it is not available at all.\nOn iOS, it works when running in the Simulator.\nYou can use this API, and all others, in a development build. Learn more: https://expo.fyi/dev-client."]}
+{"_e":"metro:bundling:started","_t":1784187544389,"id":"f","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784187544396,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187544501,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187544614,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187545060,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784187548875,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784187549302,"id":"f","total":1,"ms":4908.2245}
+{"_e":"metro:client_log","_t":1784187565689,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784187602193,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784187605177,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784187623786,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784187636058,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784187685555,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784187687926,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784187708922,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784187710882,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784187846050,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784187846051,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784187846604,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784187846609,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784187856374,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784187856375,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784187856719,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784187856724,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:failed","_t":1784187898034,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\services\\useWebSocket.ts: Unexpected token (65:4)\n\n  63 |     };\n  64 |\n> 65 |     };\n     |     ^\n  66 |\n  67 |     connectWs();\n  68 |","importStack":null,"filename":"services\\useWebSocket.ts","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784187898248,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\services\\useWebSocket.ts: Unexpected token (65:4)\n\n  63 |     };\n  64 |\n> 65 |     };\n     |     ^\n  66 |\n  67 |     connectWs();\n  68 |","importStack":null,"filename":"services\\useWebSocket.ts","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784187899064,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\services\\useWebSocket.ts: Unexpected token (65:4)\n\n  63 |     };\n  64 |\n> 65 |     };\n     |     ^\n  66 |\n  67 |     connectWs();\n  68 |","importStack":null,"filename":"services\\useWebSocket.ts","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1784187928068,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784187928435,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784187956852,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784187975355,"id":"i","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784187975356,"id":"i","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784187975502,"id":"i","total":1,"ms":146.2905}
+{"_e":"metro:client_log","_t":1784187986966,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784187992870,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784188072860,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784188108507,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784188237956,"id":"j","platform":"android","environment":null,"entry":"store\\chatStore.ts"}
+{"_e":"metro:bundling:progress","_t":1784188237956,"id":"j","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:started","_t":1784188237964,"id":"k","platform":"android","environment":null,"entry":"store\\notificationStore.ts"}
+{"_e":"metro:bundling:progress","_t":1784188237964,"id":"j","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784188237964,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784188237974,"id":"j","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784188237974,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784188238086,"id":"j","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784188238086,"id":"k","progress":0.8185941043083901,"total":21,"current":19}
+{"_e":"metro:bundling:done","_t":1784188238101,"id":"j","total":1,"ms":144.5502}
+{"_e":"metro:bundling:progress","_t":1784188238101,"id":"k","progress":0.8185941043083901,"total":21,"current":19}
+{"_e":"metro:bundling:progress","_t":1784188238208,"id":"k","progress":0.8185941043083901,"total":120,"current":21}
+{"_e":"metro:bundling:progress","_t":1784188238308,"id":"k","progress":0.8185941043083901,"total":168,"current":49}
+{"_e":"metro:bundling:progress","_t":1784188238408,"id":"k","progress":0.8185941043083901,"total":221,"current":99}
+{"_e":"metro:bundling:progress","_t":1784188238508,"id":"k","progress":0.8185941043083901,"total":270,"current":159}
+{"_e":"metro:bundling:progress","_t":1784188238610,"id":"k","progress":0.8185941043083901,"total":323,"current":194}
+{"_e":"metro:bundling:progress","_t":1784188238710,"id":"k","progress":0.8185941043083901,"total":366,"current":232}
+{"_e":"metro:bundling:progress","_t":1784188238820,"id":"k","progress":0.8185941043083901,"total":383,"current":250}
+{"_e":"metro:bundling:progress","_t":1784188238920,"id":"k","progress":0.8185941043083901,"total":425,"current":343}
+{"_e":"metro:bundling:progress","_t":1784188239049,"id":"k","progress":0.8471915828419471,"total":465,"current":428}
+{"_e":"metro:bundling:progress","_t":1784188239148,"id":"k","progress":0.9698699091560479,"total":527,"current":519}
+{"_e":"metro:bundling:progress","_t":1784188239249,"id":"k","progress":0.9698699091560479,"total":642,"current":563}
+{"_e":"metro:bundling:progress","_t":1784188239349,"id":"k","progress":0.9698699091560479,"total":733,"current":620}
+{"_e":"metro:bundling:progress","_t":1784188239449,"id":"k","progress":0.9698699091560479,"total":782,"current":676}
+{"_e":"metro:bundling:progress","_t":1784188239549,"id":"k","progress":0.9698699091560479,"total":857,"current":761}
+{"_e":"metro:bundling:progress","_t":1784188239650,"id":"k","progress":0.9698699091560479,"total":901,"current":864}
+{"_e":"metro:bundling:progress","_t":1784188239751,"id":"k","progress":0.9698699091560479,"total":1001,"current":965}
+{"_e":"metro:bundling:done","_t":1784188239941,"id":"k","total":1001,"ms":1977.563}
+{"_e":"metro:client_log","_t":1784188243606,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784188280275,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784188583764,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784188601927,"id":"l","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784188601928,"id":"l","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784188602304,"id":"l","total":1,"ms":376.8582}
+{"_e":"metro:client_log","_t":1784188618382,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784189734406,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784189761977,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784189791746,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:failed","_t":1784190347059,"id":null,"message":"Unable to resolve \"../../api/client\" from \"app\\(tabs)\\chats.tsx\"\n  22 | import { useLocalSearchParams, useRouter } from 'expo-router';\n  23 | import { Ionicons } from '@expo/vector-icons';\n> 24 | import apiClient from '../../api/client';\n     |                        ^\n  25 | import { useChatStore, Message } from '../../../store/chatStore';\n  26 | import { useAuthStore } from '../../../store/authStore';\n  27 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../api/client\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../api/client","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190347415,"id":null,"message":"Unable to resolve \"../../api/client\" from \"app\\(tabs)\\chats.tsx\"\n  22 | import { useLocalSearchParams, useRouter } from 'expo-router';\n  23 | import { Ionicons } from '@expo/vector-icons';\n> 24 | import apiClient from '../../api/client';\n     |                        ^\n  25 | import { useChatStore, Message } from '../../../store/chatStore';\n  26 | import { useAuthStore } from '../../../store/authStore';\n  27 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../api/client\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../api/client","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190351237,"id":null,"message":"Unable to resolve \"../../api/client\" from \"app\\(tabs)\\chats.tsx\"\n  22 | import { useLocalSearchParams, useRouter } from 'expo-router';\n  23 | import { Ionicons } from '@expo/vector-icons';\n> 24 | import apiClient from '../../api/client';\n     |                        ^\n  25 | import { useChatStore, Message } from '../../../store/chatStore';\n  26 | import { useAuthStore } from '../../../store/authStore';\n  27 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../api/client\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../api/client","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190362819,"id":null,"message":"Unable to resolve \"../../api/client\" from \"app\\(tabs)\\chats.tsx\"\n  23 | import { useLocalSearchParams, useRouter } from 'expo-router';\n  24 | import { Ionicons } from '@expo/vector-icons';\n> 25 | import apiClient from '../../api/client';\n     |                        ^\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../api/client\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../api/client","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190372566,"id":null,"message":"Unable to resolve \"../../api/client\" from \"app\\(tabs)\\chats.tsx\"\n  23 | import { useLocalSearchParams, useRouter } from 'expo-router';\n  24 | import { Ionicons } from '@expo/vector-icons';\n> 25 | import apiClient from '../../api/client';\n     |                        ^\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../api/client\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../api/client","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190389186,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  40 |   };\n  41 | }\n> 42 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  43 | import { useAuthStore } from '../../../store/authStore';\n  44 | import { useWebSocket } from '../../../services/useWebSocket';\n  45 | import { useTheme } from '../../../constants/theme';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190395080,"id":null,"message":"Unable to resolve \"../../api/client\" from \"app\\(tabs)\\chats.tsx\"\n  23 | import { useLocalSearchParams, useRouter } from 'expo-router';\n  24 | import { Ionicons } from '@expo/vector-icons';\n> 25 | import apiClient from '../../api/client';\n     |                        ^\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../api/client\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../api/client","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190401507,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected keyword 'import'. (26:0)\n\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import \n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     | ^\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190402862,"id":null,"message":"Unable to resolve \"../../../services/apiClient\" from \"app\\(tabs)\\chats.tsx\"\n  23 | import { useLocalSearchParams, useRouter } from 'expo-router';\n  24 | import { Ionicons } from '@expo/vector-icons';\n> 25 | import { apiClient } from '../../../services/apiClient';\n     |                            ^\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../services/apiClient\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../services/apiClient","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190414488,"id":null,"message":"Unable to resolve \"../../../services/apiClient\" from \"app\\(tabs)\\chats.tsx\"\n  23 | import { useLocalSearchParams, useRouter } from 'expo-router';\n  24 | import { Ionicons } from '@expo/vector-icons';\n> 25 | import { apiClient } from '../../../services/apiClient';\n     |                            ^\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../services/apiClient\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../services/apiClient","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190416993,"id":null,"message":"Unable to resolve \"../\" from \"app\\(tabs)\\chats.tsx\"\n  23 | import { useLocalSearchParams, useRouter } from 'expo-router';\n  24 | import { Ionicons } from '@expo/vector-icons';\n> 25 | import apiClient from \"../\"\n     |                        ^\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190427796,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190433811,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190442400,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected token, expected \"from\" (27:0)\n\n  25 | import apiClient from \"../api/client\"\n  26 | import ch\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     | ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190444218,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected token, expected \"from\" (27:0)\n\n  25 | import apiClient from \"../api/client\"\n  26 | import c\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     | ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190445690,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected token, expected \"from\" (27:0)\n\n  25 | import apiClient from \"../api/client\"\n  26 | import chat\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     | ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190448438,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected token, expected \"from\" (27:0)\n\n  25 | import apiClient from \"../api/client\"\n  26 | import chat\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     | ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190449815,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected token, expected \"from\" (27:0)\n\n  25 | import apiClient from \"../api/client\"\n  26 | import chatStr\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     | ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190452043,"id":null,"message":"Unable to resolve \"../../../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  25 | import apiClient from \"../api/client\"\n  26 | import { useChatStore } from '@/store/chatStore';\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     |                               ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190453934,"id":null,"message":"Unable to resolve \"../../../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  25 | import apiClient from \"../api/client\"\n  26 | import { useChatStore, } from '@/store/chatStore';\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     |                               ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190455294,"id":null,"message":"Unable to resolve \"../../../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  25 | import apiClient from \"../api/client\"\n  26 | import { useChatStore, } from '@/store/chatStore';\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     |                               ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190462832,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import { useAuthStore } from '../../../store/authStore';\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190465757,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 |\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190467737,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected keyword 'import'. (28:0)\n\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n  27 | import \n> 28 | import { useAuthStore } from '../../../store/authStore';\n     | ^\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';\n  31 |","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190471609,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected token, expected \"from\" (28:0)\n\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n  27 | import useChat\n> 28 | import { useAuthStore } from '../../../store/authStore';\n     | ^\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';\n  31 |","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190474066,"id":null,"message":"app\\(tabs)\\chats.tsx: Duplicate declaration \"useChatStore\"\n  25 | import apiClient from \"../api/client\"\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n> 27 | import useChatStore from '../../../store/chatStore';\n     |        ^^^^^^^^^^^^\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190478956,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 |\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190481440,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 |\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190492062,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected token (28:0)\n\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n  27 | import useChatStrore from \n> 28 | import { useAuthStore } from '../../../store/authStore';\n     | ^\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';\n  31 |","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190494764,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190496244,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190510223,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../../\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190516895,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190519015,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190522896,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190548188,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"./\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190550685,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"..\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190552784,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190558659,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../store/c\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190560842,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../store/chatStore\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190562078,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../store/chatStore\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190563671,"id":null,"message":"Unable to resolve \"../../../store/chatStore\" from \"app\\(tabs)\\chats.tsx\"\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import { useChatStore, Message } from '../../../store/chatStore';\n     |                                        ^\n  27 | import useChatStrore from \"../store/chatStore\"\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/chatStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/chatStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190566704,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected token, expected \"{\" (27:22)\n\n  25 | import apiClient from \"../api/client\"\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n> 27 | import useChatStrore, from \"../store/chatStore\"\n     |                       ^\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190572159,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Unexpected token, expected \"{\" (27:21)\n\n  25 | import apiClient from \"../api/client\"\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n> 27 | import useChatStrore,Message} from \"../store/chatStore\"\n     |                      ^\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190575871,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Identifier 'Message' has already been declared. (27:22)\n\n  25 | import apiClient from \"../api/client\"\n  26 | import { useChatStore, Message } from '../../../store/chatStore';\n> 27 | import {useChatStrore,Message} from \"../store/chatStore\"\n     |                       ^\n  28 | import { useAuthStore } from '../../../store/authStore';\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190579662,"id":null,"message":"Unable to resolve \"../../../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  26 | import {useChatStrore,Message} from \"../store/chatStore\"\n  27 | import { useAuthStore } from '../../../store/authStore';\n> 28 | import { useWebSocket } from '../../../services/useWebSocket';\n     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |\n  31 | // ── Typing Dots ──────────────────────────────────────────────────────────","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190580891,"id":null,"message":"Unable to resolve \"../../../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  25 | import apiClient from \"../api/client\"\n  26 | import {useChatStrore,Message} from \"../store/chatStore\"\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     |                               ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190586360,"id":null,"message":"Unable to resolve \"../../../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  25 | import apiClient from \"../api/client\"\n  26 | import {useChatStrore,Message} from \"../store/chatStore\"\n> 27 | import { useAuthStore } from '../../../store/authStore';\n     |                               ^\n  28 |\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190600205,"id":null,"message":"app\\(tabs)\\chats.tsx: Duplicate declaration \"useAuthStore\"\n  26 | import {useChatStrore,Message} from \"../store/chatStore\"\n  27 | import { useAuthStore } from '../../../store/authStore';\n> 28 | import useAuthStore from \"../\"\n     |        ^^^^^^^^^^^^\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';\n  31 |","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190602254,"id":null,"message":"app\\(tabs)\\chats.tsx: Duplicate declaration \"useAuthStore\"\n  26 | import {useChatStrore,Message} from \"../store/chatStore\"\n  27 | import { useAuthStore } from '../../../store/authStore';\n> 28 | import useAuthStore from \"../store/\"\n     |        ^^^^^^^^^^^^\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';\n  31 |","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190604375,"id":null,"message":"app\\(tabs)\\chats.tsx: Duplicate declaration \"useAuthStore\"\n  26 | import {useChatStrore,Message} from \"../store/chatStore\"\n  27 | import { useAuthStore } from '../../../store/authStore';\n> 28 | import useAuthStore from \"../store/authStore\"\n     |        ^^^^^^^^^^^^\n  29 | import { useWebSocket } from '../../../services/useWebSocket';\n  30 | import { useTheme } from '../../../constants/theme';\n  31 |","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784190609046,"id":null,"message":"Unable to resolve \"../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  26 | import {useChatStrore,Message} from \"../store/chatStore\"\n  27 | import useAuthStore from \"../store/authStore\"\n> 28 | import { useWebSocket } from '../../../services/useWebSocket';\n     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |\n  31 | // ── Typing Dots ──────────────────────────────────────────────────────────","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190610646,"id":null,"message":"Unable to resolve \"../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  25 | import apiClient from \"../api/client\"\n  26 | import {useChatStrore,Message} from \"../store/chatStore\"\n> 27 | import useAuthStore from \"../store/authStore\"\n     |                           ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190622765,"id":null,"message":"Unable to resolve \"../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  25 | import apiClient from \"../api/client\"\n  26 | import {useChatStrore,Message} from \"../../store/chatStore\"\n> 27 | import useAuthStore from \"../store/authStore\"\n     |                           ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190627141,"id":null,"message":"Unable to resolve \"../store/authStore\" from \"app\\(tabs)\\chats.tsx\"\n  25 | import apiClient from \"../api/client\"\n  26 | import {useChatStrore,Message} from \"../../store/chatStore\"\n> 27 | import useAuthStore from \"../store/authStore\"\n     |                           ^\n  28 | import { useWebSocket } from '../../../services/useWebSocket';\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../store/authStore\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../store/authStore","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190702514,"id":null,"message":"Unable to resolve \"../../../services/useWebSocket\" from \"app\\(tabs)\\chats.tsx\"\n  26 | import { useChatStore, Message } from \"../../store/chatStore\"\n  27 | import { useAuthStore } from \"../../store/authStore\"\n> 28 | import { useWebSocket } from '../../../services/useWebSocket';\n     |                               ^\n  29 | import { useTheme } from '../../../constants/theme';\n  30 |\n  31 | // ── Typing Dots ──────────────────────────────────────────────────────────","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp\\(tabs)\\chats.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../../../services/useWebSocket\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"../../../services/useWebSocket","originModulePath":"app\\(tabs)\\chats.tsx"}
+{"_e":"metro:bundling:failed","_t":1784190800346,"id":null,"message":"SyntaxError: C:\\Users\\ujjaw\\OneDrive\\Desktop\\python\\delivery_community\\frontend\\app\\(tabs)\\chats.tsx: Identifier 'apiClient' has already been declared. (26:7)\n\n  24 | import { Ionicons } from '@expo/vector-icons';\n  25 | import apiClient from \"../api/client\"\n> 26 | import apiClient from '../api/client';\n     |        ^\n  27 | import { useChatStore, Message } from '../../store/chatStore';\n  28 | import { useAuthStore } from '../../store/authStore';\n  29 | import { useWebSocket } from '../../services/useWebSocket';","importStack":null,"filename":"app\\(tabs)\\chats.tsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784190823111,"id":"10","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784190823111,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190823115,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190823349,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190823733,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190823834,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190823934,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824034,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824135,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824234,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824334,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824434,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824536,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824636,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824736,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824836,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784190824962,"id":"10","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784190825371,"id":"10","total":1,"ms":2259.3753}
+{"_e":"metro:bundling:started","_t":1784191233533,"id":"13","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784191233541,"id":"13","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784191234549,"id":"13","total":1,"ms":1008.5099}
+{"_e":"metro:client_log","_t":1784191274748,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:bundling:started","_t":1784191373639,"id":"14","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784191373639,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191374889,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191374991,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191375091,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191375192,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191375293,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191375397,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191375497,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191375596,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191375697,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191375803,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191375904,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376008,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376109,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376211,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376310,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376411,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376512,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376612,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376713,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376813,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191376916,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191377016,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191377117,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191377217,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191377321,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191377481,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191377680,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191377792,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784191378281,"id":"14","total":1,"ms":4641.7861}
+{"_e":"metro:client_log","_t":1784191386374,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784191445570,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784191775898,"id":"15","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784191775911,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191776097,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191776197,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191776716,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191777285,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191777390,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191777494,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191777594,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191777694,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191777794,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191777894,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191777994,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191778094,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191778194,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191778295,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191778400,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191778521,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191778628,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784191779213,"id":"15","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784191779540,"id":"15","total":1,"ms":3632.1357}
+{"_e":"metro:client_log","_t":1784191796793,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784191814840,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784192100504,"id":"16","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784192100504,"id":"16","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784192100694,"id":"16","total":1,"ms":189.8712}
+{"_e":"metro:client_log","_t":1784192111315,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784192122020,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784192458404,"id":"17","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784192458404,"id":"17","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784192458568,"id":"17","total":1,"ms":163.6993}
+{"_e":"metro:client_log","_t":1784192467733,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784192484934,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784192732183,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784192823190,"id":"19","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784192823193,"id":"19","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784192823480,"id":"19","total":1,"ms":287.0134}
+{"_e":"metro:client_log","_t":1784192860445,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784192906429,"level":"log","data":["WebSocket Connected"]}
+{"_e":"root:init","_t":1784531233283,"format":"v0-jsonl","version":"57.0.6"}
+{"_e":"env:mode","_t":1784531233287,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784531233298,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784531235363,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":true,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784531238575,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784531240246,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784531330895,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784531680058,"id":"3","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784531680063,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784531680152,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784531680942,"id":"3","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1784531681055,"id":"3","progress":0.09,"total":5,"current":3}
+{"_e":"metro:bundling:progress","_t":1784531681170,"id":"3","progress":0.1322314049586777,"total":11,"current":4}
+{"_e":"metro:bundling:progress","_t":1784531681293,"id":"3","progress":0.1322314049586777,"total":21,"current":6}
+{"_e":"metro:bundling:progress","_t":1784531681461,"id":"3","progress":0.1322314049586777,"total":29,"current":8}
+{"_e":"metro:bundling:progress","_t":1784531681577,"id":"3","progress":0.1322314049586777,"total":131,"current":13}
+{"_e":"metro:bundling:progress","_t":1784531681686,"id":"3","progress":0.1322314049586777,"total":158,"current":20}
+{"_e":"metro:bundling:progress","_t":1784531681817,"id":"3","progress":0.1322314049586777,"total":203,"current":35}
+{"_e":"metro:bundling:progress","_t":1784531681934,"id":"3","progress":0.1322314049586777,"total":227,"current":46}
+{"_e":"metro:bundling:progress","_t":1784531682034,"id":"3","progress":0.1322314049586777,"total":241,"current":60}
+{"_e":"metro:bundling:progress","_t":1784531682134,"id":"3","progress":0.1322314049586777,"total":261,"current":78}
+{"_e":"metro:bundling:progress","_t":1784531682234,"id":"3","progress":0.1322314049586777,"total":279,"current":93}
+{"_e":"metro:bundling:progress","_t":1784531682335,"id":"3","progress":0.155188246097337,"total":297,"current":117}
+{"_e":"metro:bundling:progress","_t":1784531682436,"id":"3","progress":0.18204444444444448,"total":300,"current":128}
+{"_e":"metro:bundling:progress","_t":1784531682643,"id":"3","progress":0.18204444444444448,"total":376,"current":147}
+{"_e":"metro:bundling:progress","_t":1784531682752,"id":"3","progress":0.18204444444444448,"total":381,"current":148}
+{"_e":"metro:bundling:progress","_t":1784531682788,"id":"3","progress":0.18204444444444448,"total":381,"current":149}
+{"_e":"metro:bundling:progress","_t":1784531682947,"id":"3","progress":0.18204444444444448,"total":382,"current":149}
+{"_e":"metro:bundling:progress","_t":1784531683048,"id":"3","progress":0.18204444444444448,"total":391,"current":156}
+{"_e":"metro:bundling:progress","_t":1784531683158,"id":"3","progress":0.18204444444444448,"total":401,"current":159}
+{"_e":"metro:bundling:progress","_t":1784531683257,"id":"3","progress":0.18204444444444448,"total":407,"current":165}
+{"_e":"metro:bundling:progress","_t":1784531684301,"id":"3","progress":0.20325610015584653,"total":417,"current":188}
+{"_e":"metro:bundling:progress","_t":1784531684414,"id":"3","progress":0.21352283192201432,"total":422,"current":195}
+{"_e":"metro:bundling:progress","_t":1784531684513,"id":"3","progress":0.24777283960459184,"total":448,"current":223}
+{"_e":"metro:bundling:progress","_t":1784531684614,"id":"3","progress":0.2612345679012345,"total":495,"current":253}
+{"_e":"metro:bundling:progress","_t":1784531684714,"id":"3","progress":0.28931359044995403,"total":528,"current":284}
+{"_e":"metro:bundling:progress","_t":1784531684904,"id":"3","progress":0.3022017010617739,"total":553,"current":304}
+{"_e":"metro:bundling:progress","_t":1784531685009,"id":"3","progress":0.3037850242869437,"total":557,"current":307}
+{"_e":"metro:bundling:progress","_t":1784531685109,"id":"3","progress":0.33912331625932135,"total":589,"current":343}
+{"_e":"metro:bundling:progress","_t":1784531685209,"id":"3","progress":0.33912331625932135,"total":671,"current":380}
+{"_e":"metro:bundling:progress","_t":1784531685323,"id":"3","progress":0.33912331625932135,"total":700,"current":399}
+{"_e":"metro:bundling:progress","_t":1784531685427,"id":"3","progress":0.35508538187277167,"total":730,"current":435}
+{"_e":"metro:bundling:progress","_t":1784531685527,"id":"3","progress":0.3615911582825315,"total":755,"current":454}
+{"_e":"metro:bundling:progress","_t":1784531685628,"id":"3","progress":0.42547908923918154,"total":765,"current":499}
+{"_e":"metro:bundling:progress","_t":1784531685730,"id":"3","progress":0.46990233026443495,"total":779,"current":534}
+{"_e":"metro:bundling:progress","_t":1784531685861,"id":"3","progress":0.46990233026443495,"total":840,"current":555}
+{"_e":"metro:bundling:progress","_t":1784531685985,"id":"3","progress":0.46990233026443495,"total":841,"current":557}
+{"_e":"metro:bundling:progress","_t":1784531686148,"id":"3","progress":0.46990233026443495,"total":844,"current":558}
+{"_e":"metro:bundling:progress","_t":1784531686364,"id":"3","progress":0.46990233026443495,"total":864,"current":577}
+{"_e":"metro:bundling:progress","_t":1784531686537,"id":"3","progress":0.46990233026443495,"total":879,"current":584}
+{"_e":"metro:bundling:progress","_t":1784531686742,"id":"3","progress":0.46990233026443495,"total":914,"current":611}
+{"_e":"metro:bundling:progress","_t":1784531686842,"id":"3","progress":0.46990233026443495,"total":955,"current":648}
+{"_e":"metro:bundling:progress","_t":1784531686962,"id":"3","progress":0.4822933169218458,"total":959,"current":666}
+{"_e":"metro:bundling:progress","_t":1784531687086,"id":"3","progress":0.48455320889323655,"total":974,"current":678}
+{"_e":"metro:bundling:progress","_t":1784531687218,"id":"3","progress":0.48455320889323655,"total":1012,"current":693}
+{"_e":"metro:bundling:progress","_t":1784531687319,"id":"3","progress":0.500532185663381,"total":1029,"current":728}
+{"_e":"metro:bundling:progress","_t":1784531687419,"id":"3","progress":0.5370316415127323,"total":1048,"current":768}
+{"_e":"metro:bundling:progress","_t":1784531687526,"id":"3","progress":0.5370316415127323,"total":1104,"current":800}
+{"_e":"metro:bundling:progress","_t":1784531687627,"id":"3","progress":0.5370316415127323,"total":1146,"current":822}
+{"_e":"metro:bundling:progress","_t":1784531687728,"id":"3","progress":0.5370316415127323,"total":1225,"current":845}
+{"_e":"metro:bundling:progress","_t":1784531688063,"id":"3","progress":0.5394363050209071,"total":1239,"current":910}
+{"_e":"metro:bundling:progress","_t":1784531688215,"id":"3","progress":0.5670198693383768,"total":1247,"current":939}
+{"_e":"metro:bundling:progress","_t":1784531688330,"id":"3","progress":0.5814821986952589,"total":1255,"current":957}
+{"_e":"metro:bundling:progress","_t":1784531688431,"id":"3","progress":0.5851287775404455,"total":1272,"current":973}
+{"_e":"metro:bundling:progress","_t":1784531688534,"id":"3","progress":0.6064256856259257,"total":1279,"current":996}
+{"_e":"metro:bundling:progress","_t":1784531688633,"id":"3","progress":0.6119473018437583,"total":1286,"current":1006}
+{"_e":"metro:bundling:progress","_t":1784531688742,"id":"3","progress":0.614646253340892,"total":1287,"current":1009}
+{"_e":"metro:bundling:progress","_t":1784531688843,"id":"3","progress":0.626736111111111,"total":1296,"current":1026}
+{"_e":"metro:bundling:progress","_t":1784531688948,"id":"3","progress":0.6288041711580111,"total":1309,"current":1038}
+{"_e":"metro:bundling:progress","_t":1784531689048,"id":"3","progress":0.6737206174268041,"total":1317,"current":1081}
+{"_e":"metro:bundling:progress","_t":1784531689148,"id":"3","progress":0.6742679621918171,"total":1353,"current":1111}
+{"_e":"metro:bundling:progress","_t":1784531689252,"id":"3","progress":0.6742679621918171,"total":1405,"current":1149}
+{"_e":"metro:bundling:progress","_t":1784531689402,"id":"3","progress":0.6742679621918171,"total":1405,"current":1151}
+{"_e":"metro:bundling:progress","_t":1784531689501,"id":"3","progress":0.6893461825471293,"total":1414,"current":1174}
+{"_e":"metro:bundling:progress","_t":1784531689612,"id":"3","progress":0.6911158933586469,"total":1417,"current":1178}
+{"_e":"metro:bundling:progress","_t":1784531689728,"id":"3","progress":0.7430392177608153,"total":1442,"current":1243}
+{"_e":"metro:bundling:progress","_t":1784531689851,"id":"3","progress":0.7457590296268445,"total":1444,"current":1247}
+{"_e":"metro:bundling:progress","_t":1784531690019,"id":"3","progress":0.7498339151278841,"total":1447,"current":1253}
+{"_e":"metro:bundling:progress","_t":1784531690122,"id":"3","progress":0.7510312545222607,"total":1447,"current":1254}
+{"_e":"metro:bundling:progress","_t":1784531690235,"id":"3","progress":0.7537451163340082,"total":1449,"current":1258}
+{"_e":"metro:bundling:progress","_t":1784531690333,"id":"3","progress":0.7689202617706008,"total":1462,"current":1282}
+{"_e":"metro:bundling:progress","_t":1784531690442,"id":"3","progress":0.7689202617706008,"total":1466,"current":1285}
+{"_e":"metro:bundling:progress","_t":1784531690541,"id":"3","progress":0.7817655794760172,"total":1485,"current":1313}
+{"_e":"metro:bundling:progress","_t":1784531690644,"id":"3","progress":0.7817655794760172,"total":1534,"current":1343}
+{"_e":"metro:bundling:progress","_t":1784531690770,"id":"3","progress":0.8147044558822158,"total":1571,"current":1418}
+{"_e":"metro:bundling:progress","_t":1784531690885,"id":"3","progress":0.8374741952342352,"total":1579,"current":1445}
+{"_e":"metro:bundling:progress","_t":1784531690985,"id":"3","progress":0.8422127864124339,"total":1580,"current":1450}
+{"_e":"metro:bundling:progress","_t":1784531691089,"id":"3","progress":0.8620769908668482,"total":1580,"current":1467}
+{"_e":"metro:bundling:progress","_t":1784531691307,"id":"3","progress":0.8632526838647652,"total":1580,"current":1468}
+{"_e":"metro:bundling:progress","_t":1784531691436,"id":"3","progress":0.8877616726850333,"total":1592,"current":1500}
+{"_e":"metro:bundling:progress","_t":1784531691537,"id":"3","progress":0.9189944368236548,"total":1620,"current":1553}
+{"_e":"metro:bundling:progress","_t":1784531691637,"id":"3","progress":0.9310557094490612,"total":1653,"current":1595}
+{"_e":"metro:bundling:progress","_t":1784531691738,"id":"3","progress":0.9310557094490612,"total":1701,"current":1611}
+{"_e":"metro:bundling:progress","_t":1784531691838,"id":"3","progress":0.9310557094490612,"total":1735,"current":1641}
+{"_e":"metro:bundling:progress","_t":1784531691937,"id":"3","progress":0.9310557094490612,"total":1735,"current":1642}
+{"_e":"metro:bundling:progress","_t":1784531692046,"id":"3","progress":0.9310557094490612,"total":1792,"current":1656}
+{"_e":"metro:bundling:progress","_t":1784531692146,"id":"3","progress":0.9310557094490612,"total":1823,"current":1720}
+{"_e":"metro:bundling:progress","_t":1784531692252,"id":"3","progress":0.9310557094490612,"total":1838,"current":1741}
+{"_e":"metro:bundling:progress","_t":1784531692352,"id":"3","progress":0.9374329411600772,"total":1856,"current":1797}
+{"_e":"metro:bundling:progress","_t":1784531692452,"id":"3","progress":0.9418308574229652,"total":1897,"current":1841}
+{"_e":"metro:bundling:progress","_t":1784531692553,"id":"3","progress":0.9781768064386159,"total":1914,"current":1893}
+{"_e":"metro:bundling:progress","_t":1784531692654,"id":"3","progress":0.9989586046006945,"total":1920,"current":1919}
+{"_e":"metro:bundling:progress","_t":1784531692773,"id":"3","progress":0.999,"total":1920,"current":1920}
+{"_e":"metro:bundling:done","_t":1784531693146,"id":"3","total":1920,"ms":13085.5549}
+{"_e":"metro:client_log","_t":1784531714608,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784532074774,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784533694384,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784533734910,"id":"7","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784533734912,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784533735349,"id":"7","total":1,"ms":435.9345}
+{"_e":"metro:client_log","_t":1784533782755,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784533811214,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784533942822,"id":"9","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784533942822,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784533943029,"id":"9","total":1,"ms":206.5773}
+{"_e":"metro:client_log","_t":1784533955234,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784533971392,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784534483223,"id":"b","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784534483223,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784534483501,"id":"b","total":1,"ms":277.8341}
+{"_e":"metro:client_log","_t":1784534497416,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784534509061,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:bundling:started","_t":1784537130215,"id":"c","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784537130217,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784537130242,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784537130881,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784537131190,"id":"c","total":1,"ms":973.4005}
+{"_e":"metro:client_log","_t":1784537161189,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784537627520,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784537627522,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:client_log","_t":1784537641518,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784537641518,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:bundling:started","_t":1784538493269,"id":"d","platform":"android","environment":null,"entry":"node_modules\\expo-router\\entry.js"}
+{"_e":"metro:bundling:progress","_t":1784538493270,"id":"d","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784538493274,"id":"d","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784538493939,"id":"d","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784538497698,"id":"d","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784538498578,"id":"d","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784538498736,"id":"d","total":1,"ms":5465.5257}
+{"_e":"metro:client_log","_t":1784538516316,"level":"log","data":["[HazardAlert] ⚠️  expo-notifications not available (Expo Go Android SDK 53+)."]}
+{"_e":"metro:client_log","_t":1784538530811,"level":"log","data":["WebSocket Connected"]}
+{"_e":"metro:client_log","_t":1784538764062,"level":"log","data":["WebSocket Disconnected"]}
+{"_e":"metro:server_log","_t":1784538904532,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","sdk_gphone16k_x86_64 - 17 - API 37","60"]}
+{"_e":"metro:server_log","_t":1784538910850,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","sdk_gphone16k_x86_64 - 17 - API 37","60"]}
+{"_e":"metro:server_log","_t":1784538910850,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","sdk_gphone16k_x86_64 - 17 - API 37","60"]}
+{"_e":"metro:server_log","_t":1784538910851,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","sdk_gphone16k_x86_64 - 17 - API 37","60"]}
+{"_e":"metro:server_log","_t":1784539172421,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","sdk_gphone16k_x86_64 - 17 - API 37","60"]}
+{"_e":"metro:server_log","_t":1784539458408,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.exponent","sdk_gphone16k_x86_64 - 17 - API 37","60"]}

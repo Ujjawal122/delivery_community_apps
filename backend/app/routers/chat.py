@@ -112,6 +112,26 @@ async def send_message(
     return await save_message_and_notify(db, conversation_id, current_user.id, msg_data.content)
 
 
+@router.post("/conversations/{conversation_id}/read", response_model=dict)
+async def mark_conversation_read(
+    conversation_id: uuid.UUID,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    from datetime import datetime, timezone
+    stmt = select(ConversationMember).where(
+        ConversationMember.conversation_id == conversation_id,
+        ConversationMember.user_id == current_user.id
+    )
+    res = await db.execute(stmt)
+    member = res.scalar_one_or_none()
+    if not member:
+        raise HTTPException(status_code=403, detail="Not a member of this conversation.")
+        
+    member.last_read_at = datetime.now(timezone.utc)
+    await db.commit()
+    return {"success": True}
+
 # --- WebSocket Endpoint ---
 
 @router.websocket("/ws")
